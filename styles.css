@@ -4,8 +4,11 @@ height: 100%;
 
 .bgimg {
 height: 100%;
+background-image: url("2264A674-689E-4D27-9F25-A861AA823DB2.jpeg");
+background-position: center;
+background-size: cover;
 position: relative;
-color: black;
+color: white;
 font-family: "Courier New", Courier, monospace;
 font-size: 25px;
 }
