@@ -5,3 +5,7 @@ function openGithub() {
 function openNextcloud() {
     location.href='https://cloud.tifrueh.ch'
 }
+
+function openCV() {
+    location.href='./cv.html'
+}
