@@ -164,17 +164,17 @@ html {
     background-color: #0b0d11;
     color: #c4c7c7;
     font-family: 'Qanelas Soft Bold', Helvetica, sans-serif;
-    padding: 0vw;
-    margin: 0vw;
-    border: 0vw;
+    padding: 0vh 0vw;
+    margin: 0vh 0vw;
+    border: 0vh 0vw;
 }
 
 .spacer {
-    height: 5%;
+    height: 5vw;
 }
 
 #tfv4 {
-    height: 30%;
+    height: 30vh;
 }
 
 .center {
@@ -192,12 +192,12 @@ html {
 
 .link_button {
     background-color: #0b0d11;
-    border: 0.01em solid #44a29f;
+    border: 0.1px solid #44a29f;
     border-radius: 25px;
     color: #c4c7c7;
     width: fit-content;
     padding: 0.5em 1em;
-    margin: 2% 2%;
+    margin: 2vh 2vw;
     font-family: 'Qanelas Soft Bold', Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
@@ -212,7 +212,7 @@ html {
 }
 
 .text_container {
-    padding: 0% 5%;
+    padding: 0vh 5vw;
 }
 
 h1 {
@@ -231,7 +231,7 @@ p {
 hr {
     display: none;
     margin: auto;
-    width: 60%;
+    width: 60vw;
     color: #c4c7c7;
     border-width: 1px;
 }
@@ -244,7 +244,7 @@ hr {
 
     h1 {
         font-size: 4em;
-        margin-top: 1%;
-        margin-bottom: 10%;
+        margin-top: 1vh;
+        margin-bottom: 5vh;
     }
 }
