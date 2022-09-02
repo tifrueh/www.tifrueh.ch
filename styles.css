@@ -190,6 +190,10 @@ html {
     justify-content: center;
 }
 
+.icon {
+    margin-right: 0.25em;
+}
+
 .link_button {
     background-color: #0b0d11;
     border: 0.1px solid #44a29f;
