@@ -23,9 +23,6 @@ _merge = "none"
 
 [params]
   author = "Timo Früh"
-  # email does still work but is deprecated.
-  # use [params.contact.email] instead.
-  #email = "john.doe@example.com"
   description = "Landing Page"
   bio = "My name is Timo and I'm a recent [gymnasium](https://en.wikipedia.org/wiki/Matura#In_Switzerland) graduate with a Matura in Physics and Applied Mathematics."
   avatar = "https://gravatar.com/avatar/acd4751e73bf1a6e25744c11b20bad92?s=600&d=404&r=x"
@@ -33,20 +30,30 @@ _merge = "none"
   error404 = "There is no such page."
 
   [params.contact]
-    # the default fontawesome style in simple key-value pairs is "fab", i.e. brand icons
-    github = "https://github.com/tifrueh"
-    instagram = "https://instagram.com/tifrueh"
-    
-    [params.contact.mastodon]
-      style = "fab" # may be omitted. default = "fas"
-      link = "https://fosstodon.org/@tifrueh"
-      # By default rel="me" is not set
-      # For some services, it makes sense to set it though.
-      # This is the case for Mastodon (and Github) if you link back from these services.
-      # See
-      # https://microformats.org/wiki/rel-me and
-      # https://docs.joinmastodon.org/user/profile/#verification
-      # for more information.
-      # This defaults to false to cover the case of not having control over the linked site.
+
+    [params.contact.0]
+      name = "github"
+      icon = "github"
+      style = "fab"
+      link = "https://github.com/tifrueh"
       rel-me = true
+
+    [params.contact.1]
+      name = "mastodon"
+      icon = "mastodon"
+      style = "fab"
+      link = "https://fosstodon.org/@tifrueh"
+      rel-me = true
+
+    [params.contact.2]
+      name = "instagram"
+      icon = "instagram"
+      style = "fab"
+      link = "https://instagram.com/tifrueh"
+
+    [params.contact.3]
+      name = "apple music"
+      icon = "music"
+      style = "fas"
+      link = "https://music.apple.com/profile/tifrueh"
       
