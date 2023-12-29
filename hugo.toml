@@ -27,7 +27,7 @@ _merge = "none"
   # use [params.contact.email] instead.
   #email = "john.doe@example.com"
   description = "Landing Page"
-  bio = "First Row.  \nSecond Row."
+  bio = "My name is Timo and I'm a recent [gymnasium](https://en.wikipedia.org/wiki/Matura#In_Switzerland) graduate with a Matura in Physics and Applied Mathematics."
   avatar = "https://gravatar.com/avatar/acd4751e73bf1a6e25744c11b20bad92?s=600&d=404&r=x"
   favicon = "img/favicon.ico"
   error404 = "There is no such page."
