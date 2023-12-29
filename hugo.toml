@@ -37,16 +37,6 @@ _merge = "none"
     github = "https://github.com/tifrueh"
     instagram = "https://instagram.com/tifrueh"
     
-    # You may use (inline) tables for more versatility
-    # This allows sorting and even more icons.
-    # Just make sure not to mix key-value pairs, inline tables and tables,
-    # although keeping keeping this order is ok.
-    # See https://toml.io/en/v1.0.0 for details
-    [params.contact.email]
-      name = "email" # may be omitted. defaults to key name
-      icon = "envelope" # may be omitted. defaults to key name
-      style = "fas" # may be omitted. default = "fas"
-      link = "mailto:timo.frueh@icloud.com"
     [params.contact.mastodon]
       style = "fab" # may be omitted. default = "fas"
       link = "https://fosstodon.org/@tifrueh"
