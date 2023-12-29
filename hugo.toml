@@ -13,7 +13,7 @@ editor = "nano"
 languageCode = "en"
 language = "en"
 theme = "vncnt-hugo"
-title = "Timo Früh · Landing Page"
+title = "Timo Früh"
 
 _merge = "none"
 
