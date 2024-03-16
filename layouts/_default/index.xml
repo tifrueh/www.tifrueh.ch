@@ -6,6 +6,11 @@
 {{- end }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    <image>
+      <url>{{ .Site.BaseURL }}img/favicon-192x192.png</url>
+      <title>{{ .Site.Title }}</title>
+      <link>{ .Site.BaseURL }}</link>
+    </image>
     <title>{{ .Site.Title }} &#x00B7; Posts</title>
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Title }} &#x00B7; Posts</description>
@@ -23,7 +28,7 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
     </item>
     {{- end }}
   </channel>
