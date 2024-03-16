@@ -9,6 +9,30 @@
     --background: #282c34;
 }
 
+.accent-red {
+    color: var(--red);
+}
+
+.accent-green {
+    color: var(--green);
+}
+
+.accent-yellow {
+    color: var(--yellow);
+}
+
+.accent-blue {
+    color: var(--blue);
+}
+
+.accent-magenta {
+    color: var(--magenta);
+}
+
+.accent-cyan {
+    color: var(--cyan);
+}
+
 @font-face {
     font-family: 'Source Code Pro';
     src: url('/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
@@ -63,6 +87,11 @@ body {
 
 #main-title {
     color: var(--foreground);
+}
+
+.invisible-link {
+    color: var(--foreground);
+    text-decoration: none;
 }
 
 .main-nav {
