@@ -3,7 +3,7 @@
         {{ .Content }}
     </div>
     <div class="posts">
-        {{ range first 10 .Site.RegularPages }}
+        {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
             <hr />
             {{ .Render "summary" }}
             <hr />
