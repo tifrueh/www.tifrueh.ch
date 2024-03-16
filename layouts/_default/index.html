@@ -6,7 +6,7 @@
         {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
             <hr />
             {{ .Render "summary" }}
-            <hr />
         {{ end }}
+        <hr />
     </div>
 {{ end }}
