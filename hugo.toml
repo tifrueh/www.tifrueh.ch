@@ -14,6 +14,16 @@ disableKinds = [ 'taxonomy', 'term' ]
 home = [ 'html', 'rss' ]
 section = [ 'html' ]
 
+[outputFormats]
+[outputFormats.rss]
+    baseName = "rss"
+    isHTML = false
+    isPlainText = false
+    mediaType = "application/rss+xml"
+    noUgly = true
+    permalinkable = false
+    rel = "alternate"
+
 [menus]
 [[menus.main]]
     name = '/about'
