@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-Italic.ttf');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-Bold.ttf');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-BoldItalic.ttf');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.top-flex-div {
+    font-family: 'Source Code Pro', mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 750px;
+}

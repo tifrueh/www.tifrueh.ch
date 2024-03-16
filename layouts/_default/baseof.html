@@ -3,12 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end}}</title>
+        <link rel="stylesheet" href="/css/stylesheet.css" />
     </head>
     <body>
-        {{ block "main" . }} 
-            {{ .Content }}
-        {{ end }}
-        {{ block "footer" . }}
-        {{ end }}
+        <div class="top-flex-div">
+            <main>
+                {{ block "main" . }} 
+                    {{ .Content }}
+                {{ end }}
+                {{ block "footer" . }}
+                {{ end }}
+            </main>
+        </div>
     </body>
 </html>
