@@ -70,3 +70,13 @@ h6 {
 a {
     color: var(--cyan);
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 5px;
+}
