@@ -138,7 +138,7 @@ body {
     height: 1.5em;
 }
 
-main {
+main, footer {
     max-width: 750px;
     width: 80%;
 }
