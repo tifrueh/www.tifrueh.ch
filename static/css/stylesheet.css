@@ -85,7 +85,7 @@ body {
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .top-header {
         display: flex;
         flex-direction: column;
