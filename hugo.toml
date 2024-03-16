@@ -6,6 +6,14 @@ defaultContentLanguage = 'en'
 pluralizeListTitles = false
 disableKinds = [ 'taxonomy', 'term' ]
 
+[params]
+[params.author]
+    name = "Timo Früh"
+
+[outputs]
+home = [ 'html', 'rss' ]
+section = [ 'html' ]
+
 [menus]
 [[menus.main]]
     name = '/about'
