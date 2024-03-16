@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end}}</title>
         <link rel="stylesheet" href="/css/stylesheet.css" />
-        <link rel="icon" type="image/png" href="/img/favicon-192x192.png" />
+        <link rel="icon" type="image/png" href="/images/favicon-16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/images/favicon-32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/images/favicon-96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="/images/favicon-192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="/images/favicon-192.png" sizes="196x196" />
         {{- with .Site.Home.OutputFormats.Get "rss" }}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ site.Title }} &#x00B7; Posts" />
         {{- end }}
