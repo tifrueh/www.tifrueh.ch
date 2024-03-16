@@ -1,3 +1,14 @@
+:root {
+    --red: #e06c75;
+    --green: #98c379;
+    --yellow: #e5c07b;
+    --blue: #61afef;
+    --magenta: #c678dd;
+    --cyan: #56b6c2;
+    --foreground: #dcdfe4;
+    --background: #282c34;
+}
+
 @font-face {
     font-family: 'Source Code Pro';
     src: url('/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
@@ -30,6 +41,11 @@
     font-weight: 700;
 }
 
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
 .top-flex-div {
     font-family: 'Source Code Pro', mono;
     display: flex;
@@ -39,4 +55,13 @@
 
 main {
     max-width: 750px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--blue);
 }
