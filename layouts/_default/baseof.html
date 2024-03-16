@@ -20,9 +20,13 @@
                 {{ block "main" . }} 
                     {{ .Content }}
                 {{ end }}
-                {{ block "footer" . }}
-                {{ end }}
             </main>
+            <footer>
+                {{ block "footer" . }}
+                <p>&uarr; <a href="#top">Back to top</a> &uarr;</p>
+                <p>All work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, unless stated otherwise.</p>
+                {{ end }}
+            </footer>
         </div>
     </body>
 </html>
