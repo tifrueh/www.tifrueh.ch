@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end}}</title>
         <link rel="stylesheet" href="/css/stylesheet.css" />
+        <link rel="icon" type="image/png" href="/img/favicon-192x192.png" />
         {{- with .Site.Home.OutputFormats.Get "rss" }}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ site.Title }} &#x00B7; Posts" />
         {{- end }}
