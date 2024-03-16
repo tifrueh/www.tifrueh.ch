@@ -66,3 +66,7 @@ h5,
 h6 {
     color: var(--blue);
 }
+
+a {
+    color: var(--cyan);
+}
