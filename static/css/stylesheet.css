@@ -101,6 +101,15 @@ body {
     gap: 1em;
 }
 
+.summary-timestamp {
+    margin-bottom: 0.2em;
+}
+
+.summary-link {
+    margin-top: 0.2em;
+    color: var(--green);
+}
+
 #icon-github {
     color: var(--foreground);
     width: 1.5em;

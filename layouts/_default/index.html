@@ -1,6 +1,12 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
     <div class="content">
         {{ .Content }}
+    </div>
+    <div class="posts">
+        {{ range first 10 .Site.RegularPages }}
+            <hr />
+            {{ .Render "summary" }}
+            <hr />
+        {{ end }}
     </div>
 {{ end }}
