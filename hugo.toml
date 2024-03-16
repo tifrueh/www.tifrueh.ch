@@ -5,3 +5,8 @@ copyright = 'All work is licensed under CC BY-SA 4.0, unless stated otherwise'
 defaultContentLanguage = 'en'
 pluralizeListTitles = false
 disableKinds = [ 'taxonomy', 'term' ]
+
+[menus]
+[[menus.main]]
+    name = '/about'
+    pageRef = '/about'
