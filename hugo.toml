@@ -1,59 +1,39 @@
-baseURL = "https://www.tifrueh.ch"
-# include content marked as draft
-buildDrafts = false
-# include content with publishdate in the future
-buildFuture = false
-# include content already expired
-buildExpired = false
-# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
-relativeURLs = true
-disableRSS = true
-enableRobotsTXT = true
-editor = "nano"
-languageCode = "en-GB"
-language = "en"
-theme = "vncnt-hugo"
-title = "Timo Früh"
-
-_merge = "none"
-
-[permalinks]
-  fixed = ":title/"
-  posts = "posts/:slug/"
+baseURL = 'https://www.tifrueh.ch/'
+languageCode = 'en-GB'
+title = 'Timo Früh'
+copyright = 'All work is licensed under CC BY-SA 4.0, unless stated otherwise.'
+defaultContentLanguage = 'en'
+pluralizeListTitles = false
+disableKinds = [ 'taxonomy', 'term' ]
 
 [params]
-  author = "Timo Früh"
-  description = "Landing Page"
-  bio = "My name is Timo and I'm a recent [gymnasium](https://en.wikipedia.org/wiki/Matura#In_Switzerland) graduate with a Matura in Physics and Applied Mathematics."
-  avatar = "img/avatar.png"
-  favicon = "img/favicon.ico"
-  error404 = "There is no such page."
+[params.author]
+    name = "Timo Früh"
 
-  [params.contact]
+[outputs]
+home = [ 'html', 'rss' ]
+section = [ 'html' ]
 
-    [params.contact.0]
-      name = "github"
-      icon = "github"
-      style = "fab"
-      link = "https://github.com/tifrueh"
-      rel-me = true
+[outputFormats]
+[outputFormats.rss]
+    baseName = "rss"
+    isHTML = false
+    isPlainText = false
+    mediaType = "application/rss+xml"
+    noUgly = true
+    permalinkable = false
+    rel = "alternate"
 
-    [params.contact.1]
-      name = "mastodon"
-      icon = "mastodon"
-      style = "fab"
-      link = "https://fosstodon.org/@tifrueh"
-      rel-me = true
-
-    [params.contact.2]
-      name = "instagram"
-      icon = "instagram"
-      style = "fab"
-      link = "https://instagram.com/tifrueh"
-
-    [params.contact.3]
-      name = "apple music"
-      icon = "music"
-      style = "fas"
-      link = "https://music.apple.com/profile/tifrueh"
-      
+[menus]
+[[menus.main]]
+    name = '/about'
+    pageRef = '/about'
+    weight = 10
+[[menus.main]]
+    name = '/links'
+    pageRef = '/links-and-blogroll'
+    weight = 20
+[[menus.main]]
+    name = '/explore'
+    pageRef = '/explore'
+    weight = 30

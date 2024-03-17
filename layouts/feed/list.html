@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{- with .Site.Home.OutputFormats.Get "rss" }}
+        <meta http-equiv="refresh" content="0; url={{ .RelPermalink }}" />
+        {{- end }}
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+    </body>
+</html>

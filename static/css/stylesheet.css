@@ -1,0 +1,194 @@
+:root {
+    --red: #e06c75;
+    --green: #98c379;
+    --yellow: #e5c07b;
+    --blue: #61afef;
+    --magenta: #c678dd;
+    --cyan: #56b6c2;
+    --foreground: #dcdfe4;
+    --background: #282c34;
+}
+
+.accent-red {
+    color: var(--red);
+}
+
+.accent-green {
+    color: var(--green);
+}
+
+.accent-yellow {
+    color: var(--yellow);
+}
+
+.accent-blue {
+    color: var(--blue);
+}
+
+.accent-magenta {
+    color: var(--magenta);
+}
+
+.accent-cyan {
+    color: var(--cyan);
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-Italic.ttf');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-Bold.ttf');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('/fonts/SourceCodePro/SourceCodePro-BoldItalic.ttf');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 700;
+}
+
+html, body {
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: 0px;
+    height: 100%;
+}
+
+.top-flex-div {
+    font-family: 'Source Code Pro', mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    height: 100%;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-nav, .icon-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+@media only screen and (max-width: 750px) {
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .top-header, .main-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+#main-title {
+    color: var(--foreground);
+    margin: 0px;
+}
+
+.invisible-link {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.summary-timestamp {
+    margin-bottom: 0.2em;
+}
+
+.summary-link {
+    margin-top: 0.2em;
+    color: var(--green);
+}
+
+.not-found {
+    font-size: 20px;
+    text-align: center;
+}
+
+#four-o-four {
+    font-size: 64px;
+}
+
+#icon-github {
+    color: var(--foreground);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#icon-mastodon {
+    color: var(--magenta);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#icon-rss {
+    color: var(--yellow);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+main, footer {
+    max-width: 80ch;
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 75px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--blue);
+}
+
+a {
+    color: var(--cyan);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 5px;
+}
