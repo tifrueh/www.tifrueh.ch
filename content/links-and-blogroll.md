@@ -6,7 +6,7 @@ draft = false
 
 My collection of cool stuff and cool people who make cool stuff.
 
-### Websites
+## Websites
 
 - [johnnydecimal.com](https://johnnydecimal.com) – A system to organise your life.
 - [rss-is-dead.lol](https://rss-is-dead.lol) – Explore RSS feeds in your
@@ -14,7 +14,7 @@ My collection of cool stuff and cool people who make cool stuff.
 - [theuselessweb.com](https://theuselessweb.com) – Visit random, seemingly
   useless websites.
 
-### Blogposts
+## Blogposts
 
 - [Look for Longevity](https://coryd.dev/posts/2024/look-for-longevity/) by
   Cory Dransfeldt
@@ -39,7 +39,7 @@ My collection of cool stuff and cool people who make cool stuff.
 - [The Web is Fantastic](https://rknight.me/blog/the-web-is-fantastic/) by Robb
   Knight
 
-### Blogroll
+## Blogroll
 
 - [A Very Good Blog by Keenan](https://gkeenan.co/avgb)
 - [Cassidy's blog](https://blog.cassidoo.co)
