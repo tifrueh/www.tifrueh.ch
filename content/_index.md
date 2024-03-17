@@ -1,12 +1,13 @@
 +++
 title = 'Home'
-date = 2024-03-16T07:37:39+01:00
-draft = true
+date = 2024-03-17T09:18:39+01:00
+draft = false
 +++
 
-This is the Home page.
+Hello there, and welcome to my humble website.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Facilisis sed odio morbi quis
-commodo odio. Pellentesque pulvinar pellentesque habitant morbi tristique
-senectus etc.
+I am a computer science student and a generally techy person, and I have
+recently begun delving a bit more into the whole indie web / personal website
+thing. I was inspired enough by various other people's different posts to want
+to start my own thing. You'll find all those incredible posts and people (and
+much more) on the [link page](/links-and-blogroll).
