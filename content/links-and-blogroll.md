@@ -8,10 +8,12 @@ My collection of cool stuff and cool people who make cool stuff.
 
 ## Websites
 
-- [johnnydecimal.com](https://johnnydecimal.com) – A system to organise your life.
-- [rss-is-dead.lol](https://rss-is-dead.lol) – Explore RSS feeds in your
+- [realfavicongenerator.net](https://realfavicongenerator.net) &mdash; Favicon
+  generator. For real.
+- [johnnydecimal.com](https://johnnydecimal.com) &mdash; A system to organise your life.
+- [rss-is-dead.lol](https://rss-is-dead.lol) &mdash; Explore RSS feeds in your
   neighborhood.
-- [theuselessweb.com](https://theuselessweb.com) – Visit random, seemingly
+- [theuselessweb.com](https://theuselessweb.com) &mdash; Visit random, seemingly
   useless websites.
 
 ## Blogposts
