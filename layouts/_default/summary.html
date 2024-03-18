@@ -1,3 +1,3 @@
-<p class="summary-timestamp">{{ .PublishDate }}</p>
+<p class="summary-timestamp">{{ .PublishDate | time.Format "2006-01-02 15:04 -07:00" }}</p>
 <a href="{{ .RelPermalink }}"><h3 class="summary-link">{{ .Title }}</h3></a>
 <p>{{ .Content | truncate 250 }}</p>
