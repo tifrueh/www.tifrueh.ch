@@ -6,6 +6,9 @@ defaultContentLanguage = 'en'
 pluralizeListTitles = false
 disableKinds = [ 'taxonomy', 'term' ]
 
+[frontmatter]
+publishDate = [ 'date', 'publishDate' ]
+
 [params]
 [params.author]
     name = "Timo Früh"
