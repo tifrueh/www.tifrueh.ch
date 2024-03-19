@@ -1,6 +1,7 @@
 +++
 title = 'Links and Blogroll'
 date = 2024-03-17T09:43:04+01:00
+lastmod = 2024-03-19T21:50:00+01:00
 draft = false
 +++
 
@@ -17,6 +18,8 @@ My collection of cool stuff and cool people who make cool stuff.
   useless websites.
 
 ## Blogposts
+
+- [Edges](https://pimoore.ca/2023/11/26/edges.html) by Pete Moore
 
 - [What the World Needs](https://adactio.com/journal/20996) by Jeremy Keith
 
@@ -50,6 +53,7 @@ My collection of cool stuff and cool people who make cool stuff.
 - [Cory Dransfeldt](https://coryd.dev)
 - [Kev Quirk](https://kevquirk.com)
 - [Oh, hello Ana!](https://ohhelloana.blog/posts/)
+- [P. I. Moore](https://pimoore.ca)
 - [Rach Smith's digital garden](https://rachsmith.com)
 - [Robb Knight](https://rknight.me/blog/)
 - [Zoe Aubert](https://zoeaubert.me)
