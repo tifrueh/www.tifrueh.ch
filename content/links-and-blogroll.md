@@ -18,6 +18,8 @@ My collection of cool stuff and cool people who make cool stuff.
 
 ## Blogposts
 
+- [What the World Needs](https://adactio.com/journal/20996) by Jeremy Keith
+
 - [Look for Longevity](https://coryd.dev/posts/2024/look-for-longevity/) by
   Cory Dransfeldt
 
