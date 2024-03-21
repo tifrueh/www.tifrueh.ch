@@ -1,6 +1,7 @@
 +++
 title = 'Home'
 date = 2024-03-17T09:18:39+01:00
+description = "I'm a computer science student and a generally techy person. Lately I've begun delving a bit more into the whole indie web thing and now I have my own website. All very exciting!"
 draft = false
 +++
 

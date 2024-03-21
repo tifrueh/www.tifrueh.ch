@@ -1,16 +1,16 @@
-{{ define "title" }}
-    {{ .Site.Title }}
-{{ end }}
-{{ define "main" }}
-    <div class="content">
-        {{ .Content }}
-    </div>
-    <div class="posts">
-        <h2>Posts</h2>
-        {{ range first 10 (where .Site.RegularPages "Section" "blog") }}
-            <hr />
-            {{ .Render "summary" }}
-        {{ end }}
-        <hr />
-    </div>
-{{ end }}
+{{- define "title" }}
+{{- .Site.Title }}
+{{- end }}
+{{- define "main" }}
+<div class="content">
+    {{ .Content }}
+</div>
+<div class="posts">
+    <h2>Posts</h2>
+    {{- range first 10 (where .Site.RegularPages "Section" "blog") }}
+    <hr />
+    {{ .Render "summary" }}
+    {{- end }}
+    <hr />
+</div>
+{{- end }}
