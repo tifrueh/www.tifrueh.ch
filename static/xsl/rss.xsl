@@ -16,7 +16,9 @@
         <div class="top-flex-div">
         <main>
         <p>
-            <strong>This is a web feed,</strong> also known as an RSS feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
+            <strong>This is a web feed,</strong> also known as an RSS feed. <strong> Subscribe </strong>
+            by copying the URL from the address bar into your newsreader.
+            <a href="https://aboutfeeds.com">Help! What is a feed?</a>
         </p>
         <hr />
         <h1>Web Feed Preview</h1>
