@@ -1,4 +1,5 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{ printf "<?xml-stylesheet href=\"/xsl/rss.xsl\" type=\"text/xsl\"?>" | safeHTML }}
 {{- $posts := (where .Site.RegularPages "Section" "blog") }}
 {{- $limit := .Site.Config.Services.RSS.Limit }}
 {{- if ge $limit 1 }}
