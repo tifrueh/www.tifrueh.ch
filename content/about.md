@@ -1,6 +1,7 @@
 +++
 title = 'About'
 date = 2024-03-17T19:14:31+01:00
+description = "Everything about this website and about me."
 draft = false
 +++
 

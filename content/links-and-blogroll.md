@@ -2,6 +2,7 @@
 title = 'Links and Blogroll'
 date = 2024-03-17T09:43:04+01:00
 lastmod = 2024-03-19T21:50:00+01:00
+description = "My collection of cool stuff and cool people who make cool stuff."
 draft = false
 +++
 
