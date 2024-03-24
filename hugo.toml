@@ -8,7 +8,7 @@ disableKinds = [ 'taxonomy', 'term' ]
 
 [markup]
 [markup.highlight]
-    lineNos = true
+    lineNos = false
     tabWidth = 4
     noClasses = false
 
