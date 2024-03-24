@@ -35,7 +35,7 @@
 
 @font-face {
     font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-Regular.ttf');
+    src: url('/fonts/SourceCodePro-Regular.woff2');
     font-stretch: normal;
     font-style: normal;
     font-weight: 400;
@@ -43,7 +43,7 @@
 
 @font-face {
     font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-Italic.ttf');
+    src: url('/fonts/SourceCodePro-Italic.woff2');
     font-stretch: normal;
     font-style: italic;
     font-weight: 400;
@@ -51,7 +51,7 @@
 
 @font-face {
     font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-Bold.ttf');
+    src: url('/fonts/SourceCodePro-Bold.woff2');
     font-stretch: normal;
     font-style: normal;
     font-weight: 700;
@@ -59,7 +59,7 @@
 
 @font-face {
     font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-BoldItalic.ttf');
+    src: url('/fonts/SourceCodePro-BoldItalic.woff2');
     font-stretch: normal;
     font-style: italic;
     font-weight: 700;
