@@ -7,7 +7,7 @@
 {{- end }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ .Site.Title }} &#x2022; Posts</title>
+    <title>Posts &#x2022; {{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Title }} &#x2022; Posts</description>
     <language>{{ site.Language.LanguageCode }}</language>
