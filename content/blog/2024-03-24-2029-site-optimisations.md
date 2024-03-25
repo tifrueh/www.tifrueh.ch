@@ -1,12 +1,12 @@
 +++
 title = "Site Optimisations"
-date = 2024-03-24T20:29:54+01:00
+date = 2024-03-25T15:57:06+01:00
 description = "A few notes on optimising this site."
 draft = true
 url = "/blog/2024/03/site-optimisations"
 +++
 
-During the last few days I've had some time to spare, but I didn't really have
+During the last few days, I've had some time to spare, but I didn't really have
 a good idea for another post yet[^1], so I set about optimising this website as
 thoroughly as my current knowledge about the web allows me.
 
@@ -14,19 +14,19 @@ thoroughly as my current knowledge about the web allows me.
     the mistake of not writing them down *immediately* and my monkey brain
     obviously forgot all about them right away.
 
-*Quick sidenote: If you're not very interested in all the stuff that goes on
-behind the scenes of this website and many others and you're here for my writing
-about other things, this post might not be your piece of cake. But don't fret;
-While I will probably write more technical post like this one from time to time,
-I don't intend to make them the norm. As interesting as they are, I enjoy
-writing about general life things a lot more.*
+*Quick side note: If you're not very interested in all the stuff that goes on
+behind the scenes of this website and you're here for my writing about other
+things, this post might not be your piece of cake. But don't fret; While I will
+probably write more technical posts like this one from time to time, I don't
+intend to make them the norm. As interesting as they are, I enjoy writing about
+general life things a lot more.*
 
 So, let's get started, shall we?
 
 ### General Improvements
 
-The first thing I did was typing "website tests" into my search engine and
-clicking on the first sites (namely <https://www.webpagetest.org> and
+The first thing I did was type "website tests" into my search engine and
+click on the first sites (namely <https://www.webpagetest.org> and
 <https://nibbler.insites.com>) that popped up. Those two suggested some nice
 optimisation opportunities and the following were the ones I went for
 right away:
@@ -40,6 +40,9 @@ right away:
    screenreaders know what they are supposed to represent.
 
 1. Adding descriptions to all pages.
+
+Additionally, I also converted all fonts to WOFF2 (they were TTFs previously),
+which can also improve performance.
 
 There were, of course, many more suggested improvements, but when thinking about
 the rest of them I either didn't really understand why it *would* be an
@@ -140,4 +143,93 @@ see the styled feed if you click on the RSS icon in the top right corner. :)
 
 ### Open Graph Information
 
-When I shared 
+When I shared my website and this blog's first post on Mastodon last week, I
+noticed that the link previews didn't look as detailed as they do when other
+people share stuff from their websites. So I set about digging around on various
+websites and I found some interesting `og:something` meta tags. It turns out
+that these are connected to the [Open Graph protocol](https://ogp.me) and that
+this Open Graph metadata was exactly what I was missing. So I jumped into my
+graphics editor, created the images I needed and added the necessary meta tags
+to the `<head>` of my site, which was really easy to do with HUGO.
+
+The following lines in my `baseof.html` template:
+
+```html
+<meta property="og:description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:image" content="{{- block "og-image" . }}/images/og-index.png{{- end}}" />
+<meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
+```
+
+render to the following HTML on the homepage:
+
+```html
+<meta property="og:description" content="I&#39;m a computer science student and a generally techy person. Lately I&#39;ve begun delving a bit more into the whole indie web thing and now I have my own website. All very exciting!"/>
+<meta property="og:description" content="I'm a computer science student and a generally techy person. Lately I've begun delving a bit more into the whole indie web thing and now I have my own website. All very exciting!">
+<meta property="og:url" content="https://www.tifrueh.ch/">
+<meta property="og:title" content="Home">
+<meta property="og:image" content="/images/og-index.png">
+<meta property="og:type" content="website">
+```
+
+And if I ever want to have a different preview image or content type (like
+e.&nbsp;g. on a blog post), I merely have to override the corresponding HUGO
+block.
+
+### Syntax highlighting
+
+Now, this came to my attention while writing this blog post, because I wanted to
+include some code and I hadn't configured the site to show code properly just
+yet. This was quite simple to do with HUGO, fortunately. I just had to add some
+additional configuration to my `hugo.toml`:
+
+```toml
+[markup]
+[markup.highlight]
+    lineNos = false
+    tabWidth = 4
+    noClasses = false
+```
+
+and then use:
+
+```shell
+hugo gen chromastyles --style=onedark
+```
+
+to generate all necessary CSS classes.
+
+I modified those a bit, added scrollbars, added padding and set a different
+background colour because the default one of the `onedark` colour scheme is
+obviously the same as the background of my site, as this is the exact colour scheme it
+uses.
+
+There was a weird issue, where the font size on iOS wouldn't be consistent
+across the code blocks, but I was able to fix that by adding
+`-webkit-text-size-adjust: 100%` to the CSS of the flexbox containers Chroma
+(HUGO's syntax highlighter) uses to display the code.
+
+As a last finishing touch I then also added some styling to the inline code
+blocks:
+
+```css
+p code {
+    background-color: var(--background-code);
+    padding: 0.2em;
+    border-radius: 3px;
+}
+```
+
+### Conclusion
+
+I have to admit, it was really fun trying to delve a bit more into the smaller
+details of building a website. I was able to implement some things I already
+knew about and learned about some other, new things along the way, which is
+always great. And by no means do I think that there aren't a great many more
+things I could improve still. I'm also not totally sure that I followed best
+practices for everything contained in this post, but I think that's okay, I'm
+still an absolute noob when it comes to web development and I'm absolutely fine
+with learning from all the hilariously stupid things I'm probably doing right
+now in the future. But I'm quite satisfied with my hunt for problems for the
+moment and will fix the rest of them as soon as they pop up.
