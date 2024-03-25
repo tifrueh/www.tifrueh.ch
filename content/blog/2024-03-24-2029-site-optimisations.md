@@ -2,7 +2,7 @@
 title = "Site Optimisations"
 date = 2024-03-25T15:57:06+01:00
 description = "A few notes on optimising this site."
-draft = true
+draft = false
 url = "/blog/2024/03/site-optimisations"
 +++
 
