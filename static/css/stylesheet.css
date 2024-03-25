@@ -202,7 +202,7 @@ p code {
 
 /* Chroma syntax highlighting */
 /* Background */ .bg { color:#abb2bf;background-color:var(--background-code); }
-/* PreWrapper */ .chroma { color:#abb2bf;background-color:var(--background-code);overflow-x:auto; scrollbar-color:var(--blue) var(--background-code);padding: 1em }
+/* PreWrapper */ .chroma { color:#abb2bf;background-color:var(--background-code);overflow-x:auto; scrollbar-color:var(--cyan) var(--background-code);padding: 1em }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err {  }
 /* CodeLine */ .chroma .cl {  }
