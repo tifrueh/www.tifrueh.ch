@@ -20,6 +20,8 @@ My collection of cool stuff and cool people who make cool stuff.
 
 ## Blogposts
 
+- [They and Me](https://gkeenan.co/avgb/they-and-me) by Keenan
+
 - [Edges](https://pimoore.ca/2023/11/26/edges.html) by Pete Moore
 
 - [What the World Needs](https://adactio.com/journal/20996) by Jeremy Keith
