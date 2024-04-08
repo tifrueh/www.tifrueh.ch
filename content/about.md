@@ -31,9 +31,9 @@ conversation with good friends around a bonfire on a starry night.
 
 ## This Site
 
-I'm using [HUGO](https://gohugo.io) to build this site. It is hosted on GitHub
-Pages and you can read through all of its [code on
-GitHub](https://github.com/tifrueh/tifrueh.github.io) if you like.
+I'm using [HUGO](https://gohugo.io) to build this site. All code is hosted [on
+GitHub](https://github.com/tifrueh/tifrueh.github.io) and you can always take a
+look at it, if you like.
 
 There is no HUGO theme in use, but rather custom layout files and custom CSS.
 The whole design is heavily inspired by [Cory's](https://coryd.dev),
