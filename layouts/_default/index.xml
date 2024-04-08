@@ -9,7 +9,7 @@
   <channel>
     <title>Posts &#x2022; {{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
-    <description>{{ .Site.Title }} &#x2022; Posts</description>
+    <description>{{ .Site.Home.Description }}</description>
     <language>{{ site.Language.LanguageCode }}</language>
     <managingEditor>{{ .Site.Params.author.name }}</managingEditor>
     <webMaster>{{ .Site.Params.author.name }}</webMaster>
