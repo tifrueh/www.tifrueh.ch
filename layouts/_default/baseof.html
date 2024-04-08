@@ -7,7 +7,7 @@
         <meta property="og:description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:title" content="{{ .Title }}" />
-        <meta property="og:image" content="{{- block "og-image" . }}/images/og-index.png{{- end}}" />
+        <meta property="og:image" content="{{- block "og-image" . }}https://www.tifrueh.ch/images/og-index.png{{- end}}" />
         <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
         <link rel="stylesheet" href="/css/stylesheet.css" />
