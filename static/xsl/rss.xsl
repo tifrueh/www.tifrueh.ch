@@ -23,7 +23,7 @@
         <hr />
         <h1>Web Feed Preview</h1>
         <p>
-            <p><xsl:value-of select="/rss/channel/title" />&#x2002;<a><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link" /></xsl:attribute>&#x2192; Visit website</a></p>
+            <p><xsl:value-of select="/rss/channel/description" />&#x2002;<a><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link" /></xsl:attribute>&#x2192; Visit website</a></p>
         </p>
         <hr />
         <h2>Recent posts</h2>
