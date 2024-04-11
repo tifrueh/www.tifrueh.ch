@@ -212,7 +212,7 @@ p code {
 /* LineHighlight */ .chroma .hl { background-color:#3d4148 }
 /* LineNumbersTable */ .chroma .lnt { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#55595f }
 /* LineNumbers */ .chroma .ln { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#55595f }
-/* Line */ .chroma .line { display:flex; -webkit-text-size-adjust:100% }
+/* Line */ .chroma .line { -webkit-text-size-adjust:100% }
 /* Keyword */ .chroma .k { color:#c678dd }
 /* KeywordConstant */ .chroma .kc { color:#e5c07b }
 /* KeywordDeclaration */ .chroma .kd { color:#c678dd }
