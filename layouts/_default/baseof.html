@@ -21,7 +21,7 @@
         <meta name="msapplication-config" content="/config/browserconfig.xml" />
         <meta name="theme-color" content="#282c34" />
         {{- with .Site.Home.OutputFormats.Get "rss" }}
-        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ site.Title }} &#x00B7; Posts" />
+        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="Posts &#x00B7; {{ site.Title }}" />
         {{- end }}
     </head>
     <body>
