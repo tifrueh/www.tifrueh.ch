@@ -101,11 +101,6 @@ header {
         flex-direction: column;
         gap: 15px;
     }
-
-    .main-nav {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
 }
 
 main {
@@ -166,6 +161,13 @@ p code {
 .main-nav {
     flex-grow: 1;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 460px) {
+    .main-nav {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
 
 .invisible-link {
