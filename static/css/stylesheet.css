@@ -73,69 +73,6 @@ html, body {
     height: 100%;
 }
 
-.top-flex-div {
-    font-family: 'Source Code Pro', mono;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0px;
-    height: 100%;
-}
-
-.main-nav, .icon-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-}
-
-#main-title {
-    color: var(--foreground);
-    margin: 0px;
-}
-
-.invisible-link {
-    color: var(--foreground);
-    text-decoration: none;
-}
-
-.summary-timestamp {
-    margin-bottom: 0.2em;
-}
-
-.summary-link {
-    margin-top: 0.2em;
-    color: var(--green);
-}
-
-.not-found {
-    font-size: 20px;
-    text-align: center;
-}
-
-#four-o-four {
-    font-size: 64px;
-}
-
-#icon-github {
-    color: var(--foreground);
-    width: 1.5em;
-    height: 1.5em;
-}
-
-#icon-mastodon {
-    color: var(--magenta);
-    width: 1.5em;
-    height: 1.5em;
-}
-
-#icon-rss {
-    color: var(--yellow);
-    width: 1.5em;
-    height: 1.5em;
-}
-
 header, main, footer {
     max-width: 80ch;
     width: 80%;
@@ -207,6 +144,69 @@ p code {
     background-color: var(--background-code);
     padding: 0.2em 0.4em;
     border-radius: 6px;
+}
+
+.top-flex-div {
+    font-family: 'Source Code Pro', mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    height: 100%;
+}
+
+.main-nav, .icon-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.invisible-link {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.summary-timestamp {
+    margin-bottom: 0.2em;
+}
+
+.summary-link {
+    margin-top: 0.2em;
+    color: var(--green);
+}
+
+.not-found {
+    font-size: 20px;
+    text-align: center;
+}
+
+#main-title {
+    color: var(--foreground);
+    margin: 0px;
+}
+
+#four-o-four {
+    font-size: 64px;
+}
+
+#icon-github {
+    color: var(--foreground);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#icon-mastodon {
+    color: var(--magenta);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#icon-rss {
+    color: var(--yellow);
+    width: 1.5em;
+    height: 1.5em;
 }
 
 /* Chroma syntax highlighting */
