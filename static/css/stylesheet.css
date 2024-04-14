@@ -171,6 +171,10 @@ header {
     }
 }
 
+main {
+    flex-grow: 1;
+}
+
 footer {
     text-align: center;
     margin-top: 75px;
