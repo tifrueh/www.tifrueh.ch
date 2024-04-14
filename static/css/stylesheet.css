@@ -163,6 +163,11 @@ p code {
     gap: 1em;
 }
 
+.main-nav {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
 .invisible-link {
     color: var(--foreground);
     text-decoration: none;
