@@ -34,6 +34,10 @@
     color: var(--cyan);
 }
 
+.accent-foreground {
+    color: var(--foreground);
+}
+
 @font-face {
     font-family: 'Source Code Pro';
     src: url('/fonts/SourceCodePro-Regular.woff2');
@@ -189,6 +193,12 @@ p code {
     text-align: center;
 }
 
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
 #main-title {
     color: var(--foreground);
     margin: 0px;
@@ -196,24 +206,6 @@ p code {
 
 #four-o-four {
     font-size: 64px;
-}
-
-#icon-github {
-    color: var(--foreground);
-    width: 1.5em;
-    height: 1.5em;
-}
-
-#icon-mastodon {
-    color: var(--magenta);
-    width: 1.5em;
-    height: 1.5em;
-}
-
-#icon-rss {
-    color: var(--yellow);
-    width: 1.5em;
-    height: 1.5em;
 }
 
 /* Chroma syntax highlighting */
