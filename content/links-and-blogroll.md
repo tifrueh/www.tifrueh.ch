@@ -8,15 +8,21 @@ draft = false
 
 My collection of cool stuff and cool people who make cool stuff.
 
-## Websites
+## Blogroll
 
-- [realfavicongenerator.net](https://realfavicongenerator.net) &mdash; Favicon
-  generator. For real.
-- [johnnydecimal.com](https://johnnydecimal.com) &mdash; A system to organise your life.
-- [rss-is-dead.lol](https://rss-is-dead.lol) &mdash; Explore RSS feeds in your
-  neighborhood.
-- [theuselessweb.com](https://theuselessweb.com) &mdash; Visit random, seemingly
-  useless websites.
+| Name                          | Link                                                              | RSS
+|---                            | ---                                                               | ---
+| A Very Good Blog by Keenan    | [{{< inline-icon name="link" >}}](https://gkeenan.co/avgb)        | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://gkeenan.co/avgb/?format=rss)
+| Ana Rodrigues                 | [{{< inline-icon name="link" >}}](https://ohelloana.blog/posts/)  | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://ohhelloana.blog/feed.xml)
+| Cassidy's blog                | [{{< inline-icon name="link" >}}](https://blog.cassidoo.co)       | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://blog.cassidoo.co/rss.xml)
+| Cory Dransfeldt               | [{{< inline-icon name="link" >}}](https://coryd.dev)              | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://feedpress.me/coryd)
+| Kev Quirk                     | [{{< inline-icon name="link" >}}](https://kevquirk.com)           | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://kevquirk.com/feed)
+| localghost                    | [{{< inline-icon name="link" >}}](https://localghost.dev)         | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://localghost.dev/feed.xml)
+| P. I. Moore                   | [{{< inline-icon name="link" >}}](https://pimoore.ca)             | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://pimoore.ca/feed.xml)
+| Rach Smith's digital garden   | [{{< inline-icon name="link" >}}](https://rachsmith.com)          | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://rachsmith.com/feed.xml)
+| Robb Knight                   | [{{< inline-icon name="link" >}}](https://rknight.me/blog/)       | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://rknight.me/subscribe/posts/rss.xml)
+| the library of alexandra      | [{{< inline-icon name="link" >}}](https://library.xandra.cc)      | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://library.xandra.cc/feed/?type=rss)
+| Zoe Aubert                    | [{{< inline-icon name="link" >}}](https://zoeaubert.me)           | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://zoeaubert.me/rss.xml)
 
 ## Blogposts
 
@@ -49,18 +55,12 @@ My collection of cool stuff and cool people who make cool stuff.
 - [The Web is Fantastic](https://rknight.me/blog/the-web-is-fantastic/) by Robb
   Knight
 
-## Blogroll
+## Websites
 
-| Name                          | Link                                                              | RSS
-|---                            | ---                                                               | ---
-| A Very Good Blog by Keenan    | [{{< inline-icon name="link" >}}](https://gkeenan.co/avgb)        | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://gkeenan.co/avgb/?format=rss)
-| Ana Rodrigues                 | [{{< inline-icon name="link" >}}](https://ohelloana.blog/posts/)  | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://ohhelloana.blog/feed.xml)
-| Cassidy's blog                | [{{< inline-icon name="link" >}}](https://blog.cassidoo.co)       | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://blog.cassidoo.co/rss.xml)
-| Cory Dransfeldt               | [{{< inline-icon name="link" >}}](https://coryd.dev)              | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://feedpress.me/coryd)
-| Kev Quirk                     | [{{< inline-icon name="link" >}}](https://kevquirk.com)           | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://kevquirk.com/feed)
-| localghost                    | [{{< inline-icon name="link" >}}](https://localghost.dev)         | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://localghost.dev/feed.xml)
-| P. I. Moore                   | [{{< inline-icon name="link" >}}](https://pimoore.ca)             | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://pimoore.ca/feed.xml)
-| Rach Smith's digital garden   | [{{< inline-icon name="link" >}}](https://rachsmith.com)          | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://rachsmith.com/feed.xml)
-| Robb Knight                   | [{{< inline-icon name="link" >}}](https://rknight.me/blog/)       | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://rknight.me/subscribe/posts/rss.xml)
-| the library of alexandra      | [{{< inline-icon name="link" >}}](https://library.xandra.cc)      | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://library.xandra.cc/feed/?type=rss)
-| Zoe Aubert                    | [{{< inline-icon name="link" >}}](https://zoeaubert.me)           | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://zoeaubert.me/rss.xml)
+- [realfavicongenerator.net](https://realfavicongenerator.net) &mdash; Favicon
+  generator. For real.
+- [johnnydecimal.com](https://johnnydecimal.com) &mdash; A system to organise your life.
+- [rss-is-dead.lol](https://rss-is-dead.lol) &mdash; Explore RSS feeds in your
+  neighborhood.
+- [theuselessweb.com](https://theuselessweb.com) &mdash; Visit random, seemingly
+  useless websites.
