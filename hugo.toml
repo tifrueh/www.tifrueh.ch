@@ -40,7 +40,7 @@ section = [ 'html' ]
     weight = 10
 [[menus.main]]
     name = '/links'
-    pageRef = '/links-and-blogroll'
+    pageRef = '/links'
     weight = 20
 [[menus.main]]
     name = '/explore'

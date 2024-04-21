@@ -10,5 +10,5 @@ Hello there, I'm Timo, welcome to my website.
 I am a computer science student and a generally techy person, and I have lately
 begun delving a bit more into the whole indie web thing. After some months of
 participating rather silently, various other people's posts (most of which
-you'll find on the [/links](/links-and-blogroll) page) inspired me to start my
+you'll find on the [/links](/links) page) inspired me to start my
 own thing.
