@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta charset="utf-8" />
         <title><xsl:value-of select="/rss/channel/title" /></title>
-        <link rel="stylesheet" href="../css/stylesheet.css" />
+        <link rel="stylesheet" href="/css/stylesheet.min.css" />
     </head>
     <body>
         <div class="top-flex-div">

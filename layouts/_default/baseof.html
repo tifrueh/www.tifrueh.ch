@@ -10,6 +10,7 @@
         <meta property="og:image" content="{{- block "og-image" . }}{{- urls.AbsURL "images/og-index.png" }}{{- end}}" />
         <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
         {{- with resources.Get "css/stylesheet.css" | resources.Minify }}
+        {{- .Publish }}
         <style>{{- .Content | safeCSS }}</style>
         {{- end }}
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
