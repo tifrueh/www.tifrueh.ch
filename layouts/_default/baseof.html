@@ -9,8 +9,10 @@
         <meta property="og:title" content="{{ .Title }}" />
         <meta property="og:image" content="{{- block "og-image" . }}{{- urls.AbsURL "images/og-index.png" }}{{- end}}" />
         <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
+        {{- with resources.Get "css/stylesheet.css" | resources.Minify }}
+        <style>{{- .Content | safeCSS }}</style>
+        {{- end }}
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
-        <link rel="stylesheet" href="/css/stylesheet.css" />
         <link href="/fonts/SourceCodePro-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="" />
         <link href="/fonts/SourceCodePro-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="" />
         <link href="/fonts/SourceCodePro-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="" />
