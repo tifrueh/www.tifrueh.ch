@@ -5,7 +5,7 @@
 {{- if ge $limit 1 }}
     {{- $pages = $pages | first $limit }}
 {{- end }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts &#x2022; {{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
@@ -23,7 +23,8 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
       <dc:creator>{{- .Site.Params.author.name }}</dc:creator>
-      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
+      <description>{{ .Description }}</description>
+      <content:encoded>{{ .Content | transform.XMLEscape | safeHTML }}</content:encoded>
     </item>
     {{- end }}
   </channel>
