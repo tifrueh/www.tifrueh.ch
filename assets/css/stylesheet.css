@@ -90,34 +90,13 @@ header, main, footer {
     width: 80%;
 }
 
-@media only screen and (max-width: 460px) {
-    header, main, footer {
-        width: 90%;
-    }
-}
-
 header {
     display: flex;
     flex-flow: row wrap;
+    gap: 0.5rem;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 750px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
 }
 
 main {
@@ -194,21 +173,9 @@ p {
 
 .main-nav, .icon-nav {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
-    gap: 1em;
-}
-
-.main-nav {
-    flex-grow: 1;
-    justify-content: flex-end;
-}
-
-@media only screen and (max-width: 460px) {
-    .main-nav {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
+    gap: 0.75rem;
 }
 
 .invisible-link {
@@ -254,6 +221,12 @@ p {
 #four-o-four {
     font-size: 8em;
     margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    header, main, footer {
+        width: 85%;
+    }
 }
 
 /* Chroma syntax highlighting */
