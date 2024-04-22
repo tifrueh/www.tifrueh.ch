@@ -22,6 +22,7 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <guid>{{ .Permalink }}</guid>
+      <dc:creator>{{- .Site.Params.author.name }}</dc:creator>
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
     </item>
     {{- end }}
