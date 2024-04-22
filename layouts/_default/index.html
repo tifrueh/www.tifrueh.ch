@@ -8,7 +8,7 @@
 <div class="posts">
     <h2>Posts</h2>
     {{- range first 10 (where .Site.RegularPages "Section" "blog") }}
-    <hr class="post-divider" />
+    <hr />
     {{ .Render "summary" }}
     {{- end }}
     <hr />
