@@ -101,7 +101,7 @@ header {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -136,6 +136,11 @@ h4,
 h5,
 h6 {
     color: var(--blue);
+    margin: 1.5em 0 0.5em 0;
+}
+
+h1 {
+    margin: 0 0 0.5em 0;
 }
 
 a {
@@ -166,8 +171,15 @@ p code {
     border-radius: 6px;
 }
 
+p {
+    margin: 0 0 1em 0;
+}
+
 .top-flex-div {
+    box-sizing: border-box;
+    padding-top: 30px;
     font-family: 'Source Serif 4', serif;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,10 +236,6 @@ p code {
     width: 1.3em;
     height: 1.3em;
     vertical-align: text-top;
-}
-
-.top-divider {
-    margin-top: 30px;
 }
 
 #main-title {

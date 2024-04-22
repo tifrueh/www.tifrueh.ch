@@ -1,8 +1,8 @@
 {{- define "og-image" }}{{- urls.AbsURL "images/og-blog.png" }}{{- end }}
 {{- define "og-type" }}article{{- end }}
 {{- define "main" }}
-<hr class="top-divider" />
-<h2>{{ .Title }}</h2>
+<hr />
+<h1>{{ .Title }}</h1>
 <p>{{ .PublishDate | time.Format "2006-01-02 15:04 -07:00" }}</p>
 <hr />
 <div class="content">

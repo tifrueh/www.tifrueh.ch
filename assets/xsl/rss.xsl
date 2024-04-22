@@ -15,6 +15,7 @@
     <body>
         <div class="top-flex-div">
         <main>
+        <hr />
         <p>
             <strong>This is a web feed,</strong> also known as an RSS feed. <strong> Subscribe </strong>
             by copying the URL from the address bar into your newsreader.
@@ -25,7 +26,6 @@
         <p>
             <p><xsl:value-of select="/rss/channel/description" />&#x2002;<a><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link" /></xsl:attribute>&#x2192; Visit website</a></p>
         </p>
-        <hr />
         <h2>Recent posts</h2>
         <xsl:for-each select="/rss/channel/item">
             <p class="summary-timestamp"><xsl:value-of select="pubDate" /></p>
