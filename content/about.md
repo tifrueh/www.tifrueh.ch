@@ -1,6 +1,7 @@
 +++
 title = 'About'
 date = 2024-03-17T19:14:31+01:00
+lastmod = 2024-04-22T21:08:45+02:00
 description = "Everything about this website and about me."
 draft = false
 +++
@@ -39,9 +40,8 @@ There is no HUGO theme in use, but rather custom layout files and custom CSS.
 The whole design is heavily inspired by [Cory's](https://coryd.dev),
 [Kev's](https://kevquirk.com) and [Robb's](https://rknight.me) sites.
 
-The site aims for a kind of terminal-esque look, all text uses [Source Code
-Pro](https://fonts.google.com/specimen/Source+Code+Pro), and all colours stem
-from the [onehalfdark](https://github.com/sonph/onehalf/tree/master) colour
-scheme. And in case you're asking yourself whether those colours and this font are
-the ones I always use when configuring *anything*, you would be
-correct indeed, my friend.
+The site aims for a minimalistic look, all text uses [Source Serif
+4](https://fonts.google.com/specimen/Source+Serif+4), and all colours stem from
+the [onehalfdark](https://github.com/sonph/onehalf/tree/master) colour scheme.
+And in case you're asking yourself whether those colours are the ones I always
+use when configuring *anything*, you would be correct indeed, my friend.
