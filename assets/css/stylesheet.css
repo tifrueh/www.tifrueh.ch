@@ -39,35 +39,43 @@
 }
 
 @font-face {
+    font-family: 'Source Serif 4';
+    src: url('/fonts/SourceSerif4-Regular.woff2');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('/fonts/SourceSerif4-Italic.woff2');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('/fonts/SourceSerif4-Bold.woff2');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    src: url('/fonts/SourceSerif4-BoldItalic.woff2');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
     font-family: 'Source Code Pro';
     src: url('/fonts/SourceCodePro-Regular.woff2');
     font-stretch: normal;
     font-style: normal;
     font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-Italic.woff2');
-    font-stretch: normal;
-    font-style: italic;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-Bold.woff2');
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('/fonts/SourceCodePro-BoldItalic.woff2');
-    font-stretch: normal;
-    font-style: italic;
-    font-weight: 700;
 }
 
 html, body {
@@ -147,6 +155,11 @@ th, td {
     width: 100%;
 }
 
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9em;
+}
+
 p code {
     background-color: var(--background-code);
     padding: 0.2em 0.4em;
@@ -154,7 +167,7 @@ p code {
 }
 
 .top-flex-div {
-    font-family: 'Source Code Pro', mono;
+    font-family: 'Source Serif 4', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
