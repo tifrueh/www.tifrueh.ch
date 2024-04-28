@@ -2,10 +2,8 @@
     <h1>{{ .Title }}</h1>
     <div class="content">
         {{ .Content }}
-        {{- range .Pages }}
-        <hr />
-        {{ .Render "summary" }}
+        {{- range .Site.Menus.explore }}
+        <p><a href="{{ .URL }}">{{ .Name }}</a></p>
         {{- end }}
-        <hr />
     </div>
 {{- end }}

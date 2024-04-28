@@ -39,10 +39,14 @@ section = [ 'html' ]
     pageRef = '/about'
     weight = 10
 [[menus.main]]
-    name = '/links'
-    pageRef = '/links'
+    name = '/blog'
+    pageRef = '/blog'
     weight = 20
 [[menus.main]]
     name = '/explore'
     pageRef = '/explore'
     weight = 30
+[[menus.explore]]
+    name = '/links'
+    pageRef = '/links'
+    weight = 10
