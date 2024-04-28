@@ -158,6 +158,14 @@ p {
     margin: 0 0 1em 0;
 }
 
+blockquote {
+    margin: 0 0 1em 0;
+    padding: 0 1em;
+    border-radius: 3px;
+    border-left: 3px solid var(--foreground);
+    font-style: italic;
+}
+
 .top-flex-div {
     box-sizing: border-box;
     padding-top: 30px;
