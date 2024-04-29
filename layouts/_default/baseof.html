@@ -4,6 +4,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
+        <link href="{{- with resources.Get "fonts/SourceSerif4-Bold.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
+        <link href="{{- with resources.Get "fonts/SourceSerif4-Italic.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
+        <link href="{{- with resources.Get "fonts/SourceSerif4-Regular.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
         <meta property="og:description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:title" content="{{ .Title }}" />
@@ -14,8 +17,6 @@
         <style>{{- .Content | safeCSS }}</style>
         {{- end }}
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
-        <link href="{{- with resources.Get "fonts/SourceSerif4-Bold.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
-        <link href="{{- with resources.Get "fonts/SourceSerif4-Regular.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
