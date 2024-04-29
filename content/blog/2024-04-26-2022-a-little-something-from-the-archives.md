@@ -14,10 +14,10 @@ wrote a speech about Seneca.
 
 [^1]: I find myself doing that waaay too often lately.
 
-[^2]: If you're interested in philosophy (or also if you're not, but consider
-    giving it a try), I'd definitely recommend you read it. It's a collection
-    of Seneca's instructive letters, translated into English. You can download
-    PDFs of all three volumes for free on [Tim's
+[^2]: If you're interested in philosophy (or also if you're not, but
+    considering learning more about it), I'd definitely recommend you read it.
+    It's a collection of Seneca's instructive letters, translated into English.
+    You can download PDFs of all three volumes for free on [Tim's
     website](https://tim.blog/2017/07/06/tao-of-seneca/).
 
 After rereading it, I thought it'd be cool to upload it here. To make sure I
