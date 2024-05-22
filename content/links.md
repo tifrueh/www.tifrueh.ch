@@ -27,6 +27,12 @@ My collection of cool stuff and cool people who make cool stuff.
 
 ## Blogposts
 
+- [(Alive) (Or: "Untitled #1")](https://gkeenan.co/avgb/untitled-1-aka-vaka) by
+  Keenan
+
+- [Don't Blow Out Your Own Candle (Or:
+  "Us")](https://gkeenan.co/avgb/dont-blow-out-your-own-candle) by Keenan
+
 - [An Unrelenting Sense of Longing (or:
   "Maps")](https://gkeenan.co/avgb/an-unrelenting-sense-of-longing) by Keenan
 
