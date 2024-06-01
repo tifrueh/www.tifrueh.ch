@@ -1,7 +1,7 @@
 +++
 title = 'Links and Blogroll'
 date = 2024-03-17T09:43:04+01:00
-lastmod = 2024-03-19T21:50:00+01:00
+lastmod = 2024-06-01T14:22:21+02:00
 description = "My collection of cool stuff and cool people who make cool stuff."
 draft = false
 +++
@@ -26,6 +26,9 @@ My collection of cool stuff and cool people who make cool stuff.
 | the library of alexandra      | [{{< inline-icon name="link" >}}](https://library.xandra.cc)      | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://library.xandra.cc/feed/?type=rss)
 
 ## Blogposts
+
+- [How It Feels to Get an AI Email From a
+  Friend](https://mrgan.com/ai-email-from-a-friend/) by Neven Morgan
 
 - [(Alive) (Or: "Untitled #1")](https://gkeenan.co/avgb/untitled-1-aka-vaka) by
   Keenan
