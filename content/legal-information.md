@@ -36,8 +36,8 @@ For further information, please visit
 
 Any code, instructions how to do things and any other information related to
 information technology are published in the hope that they will be useful, but
-without any warranty. I cannot be held reliable for any damage incurred by their
-use.
+without any warranty. I cannot be held responsible for any damage incurred by
+their use.
 
 ## Privacy policy
 
