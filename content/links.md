@@ -81,7 +81,5 @@ My collection of cool stuff and cool people who make cool stuff.
 ---
 
 _Note: If you find any website or post of yours on this page and you'd rather
-not have anything to do with me, please, let me know.
-[Mastodon](https://fosstodon.org/@tifrueh) is probably your best bet to reach me
-right now, but I will be setting up an email address in the near future, so if
-you prefer that, you might actually have better luck in a week or two._
+not have anything to do with me, please, let me know. See the
+[Contact]({{< ref "/contact" >}}) page for information on how to contact me._
