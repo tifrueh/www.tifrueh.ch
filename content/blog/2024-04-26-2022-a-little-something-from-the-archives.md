@@ -3,7 +3,6 @@ title = "A Little Something From the Archives"
 date = 2024-04-29T07:49:00+02:00
 description = "An upload of an old text of mine."
 draft = false
-url = "/blog/2024/04/a-little-something-from-the-archives"
 +++
 
 While rummaging around in my memories of the "good ol' times"[^1], I remembered

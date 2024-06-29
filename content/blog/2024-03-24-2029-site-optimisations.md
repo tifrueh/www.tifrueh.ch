@@ -3,7 +3,6 @@ title = "Site Optimisations"
 date = 2024-03-25T15:57:06+01:00
 description = "A few notes on optimising this site."
 draft = false
-url = "/blog/2024/03/site-optimisations"
 +++
 
 During the last few days, I've had some time to spare, but I didn't really have

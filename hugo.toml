@@ -6,6 +6,10 @@ defaultContentLanguage = 'en'
 pluralizeListTitles = false
 disableKinds = [ 'taxonomy', 'term' ]
 
+[permalinks]
+[permalinks.page]
+    blog = '/blog/:year/:month/:slug'
+
 [markup]
 [markup.highlight]
     lineNos = false
