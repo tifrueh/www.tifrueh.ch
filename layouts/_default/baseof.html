@@ -14,6 +14,7 @@
         <meta property="og:title" content="{{ .Title }}" />
         <meta property="og:image" content="{{- block "og-image" . }}{{- urls.AbsURL "images/og-index.png" }}{{- end}}" />
         <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
+        <meta property="fediverse:creator" content="@tifrueh@fosstodon.org" />
         {{- with resources.Get "css/stylesheet.css" | resources.Minify }}
         {{- .Publish }}
         <style>{{- .Content | safeCSS }}</style>
