@@ -6,11 +6,12 @@
     {{ .Content }}
 </div>
 <div class="posts">
-    <h2>Posts</h2>
-    {{- range first 10 (where .Site.RegularPages "Section" "blog") }}
+    <h2>Latest Posts</h2>
+    {{- range first 4 (where .Site.RegularPages "Section" "blog") }}
     <hr />
     {{ .Render "summary" }}
     {{- end }}
     <hr />
+    <p>&rarr; More in the <a href={{- absURL "/blog/" }}>Blog Archive</a></p>
 </div>
 {{- end }}
