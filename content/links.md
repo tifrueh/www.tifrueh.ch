@@ -32,42 +32,42 @@ My collection of cool stuff and cool people who make cool stuff.
   Radio")](https://gkeenan.co/avgb/i-was-young-and-stupid-and-the-only-thing-thats-changed-is-now-im-older/)
   by Keenan
 
-- [How It Feels to Get an AI Email From a
-  Friend](https://mrgan.com/ai-email-from-a-friend/) by Neven Morgan
+- [How it feels to get an AI email from a
+  friend](https://mrgan.com/ai-email-from-a-friend/) by Neven Morgan
 
-- [(Alive) (Or: "Untitled #1")](https://gkeenan.co/avgb/untitled-1-aka-vaka) by
+- [(Alive) (or: "Untitled #1")](https://gkeenan.co/avgb/untitled-1-aka-vaka) by
   Keenan
 
-- [Don't Blow Out Your Own Candle (Or:
-  "Us")](https://gkeenan.co/avgb/dont-blow-out-your-own-candle) by Keenan
+- [Don’t blow out your own candle (or: "Us")
+  ](https://gkeenan.co/avgb/dont-blow-out-your-own-candle) by Keenan
 
-- [An Unrelenting Sense of Longing (or:
+- [An unrelenting sense of longing (or:
   "Maps")](https://gkeenan.co/avgb/an-unrelenting-sense-of-longing) by Keenan
 
 - [They and Me](https://gkeenan.co/avgb/they-and-me) by Keenan
 
 - [Edges](https://pimoore.ca/2023/11/26/edges.html) by Pete Moore
 
-- [What the World Needs](https://adactio.com/journal/20996) by Jeremy Keith
+- [What the world needs](https://adactio.com/journal/20996) by Jeremy Keith
 
-- [Look for Longevity](https://coryd.dev/posts/2024/look-for-longevity/) by
+- [Look for longevity](https://coryd.dev/posts/2024/look-for-longevity/) by
   Cory Dransfeldt
 
-- [You Don't Have To Be a "Content Creator" To Have a
-  Website](https://ohhelloana.blog/just-get-a-website/) by Ana Rodrigues
+- [You don't have to be a "content creator" to have a
+  website.](https://ohhelloana.blog/just-get-a-website/) by Ana Rodrigues
 
 - [An Ode to My Grandmother](https://library.xandra.cc/gloria/) by Alexandra
 
-- [RSS Readers Make Me Want To Jump Into a Vat of
-  Acid](https://gkeenan.co/avgb/rss-readers-make-me-want-to-jump-into-a-vat-of-acid)
+- [RSS readers make me want to jump into a vat of
+  acid!](https://gkeenan.co/avgb/rss-readers-make-me-want-to-jump-into-a-vat-of-acid)
   by Keenan
 
-- [Please Please Please Please Please Please Share Your Big Beautiful Self With
-  the
-  World](https://gkeenan.co/avgb/please-please-please-please-please-please-share-your-big-dumb-beautiful-self-with-the-world)
+- [Please please please please please please share your big dumb beautiful self
+  with the
+  world](https://gkeenan.co/avgb/please-please-please-please-please-please-share-your-big-dumb-beautiful-self-with-the-world)
   by Keenan (and yes, all Please's matter, they have feelings too, you know)
 
-- [I Miss Human Curation](https://blog.cassidoo.co/post/human-curation/) by
+- [I miss human curation](https://blog.cassidoo.co/post/human-curation/) by
   Cassidy
 
 - [The Web is Fantastic](https://rknight.me/blog/the-web-is-fantastic/) by Robb
