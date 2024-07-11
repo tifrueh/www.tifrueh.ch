@@ -27,6 +27,11 @@ My collection of cool stuff and cool people who make cool stuff.
 
 ## Blogposts
 
+- [I was young and stupid and the only thing that's changed is now I'm older
+  (or: "Transistor
+  Radio")](https://gkeenan.co/avgb/i-was-young-and-stupid-and-the-only-thing-thats-changed-is-now-im-older/)
+  by Keenan
+
 - [How It Feels to Get an AI Email From a
   Friend](https://mrgan.com/ai-email-from-a-friend/) by Neven Morgan
 
