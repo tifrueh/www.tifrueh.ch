@@ -1,7 +1,7 @@
 +++
 title = "Legal Information"
 date = 2024-06-29T17:31:17+02:00
-lastmod = 2024-06-29T17:31:17+02:00
+lastmod = 2024-08-09T21:41:37+02:00
 description = "The privacy policy of this website and other important legal information."
 draft = false
 +++
@@ -34,10 +34,9 @@ For further information, please visit
 
 ## Disclaimer
 
-Any code, instructions how to do things and any other information related to
-information technology are published in the hope that they will be useful, but
+Everything on this site is published in the hope that it will be useful, but
 without any warranty. I cannot be held responsible for any damage incurred by
-their use.
+the use of advice or code provided on this site.
 
 ## Privacy policy
 
