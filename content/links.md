@@ -29,6 +29,10 @@ My collection of cool stuff and cool people who make cool stuff.
 
 ## Blogposts
 
+- [Osa the Dog and the Last
+  Goodbye](https://louplummer.lol/osa-the-dog-and-the-last-goodbye/) by Lou
+  Plummer
+
 - [I was young and stupid and the only thing that's changed is now I'm older
   (or: "Transistor
   Radio")](https://gkeenan.co/avgb/i-was-young-and-stupid-and-the-only-thing-thats-changed-is-now-im-older/)
