@@ -19,6 +19,7 @@ My collection of cool stuff and cool people who make cool stuff.
 | Cole's blog                   | [{{< inline-icon name="link" >}}](https://coleb.blog)             | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://coleb.blog/posts_feed)
 | Cory Dransfeldt               | [{{< inline-icon name="link" >}}](https://coryd.dev)              | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://feedpress.me/coryd)
 | Kev Quirk                     | [{{< inline-icon name="link" >}}](https://kevquirk.com)           | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://kevquirk.com/feed)
+| Living Out Loud               | [{{< inline-icon name="link" >}}](https://louplummer.lol/blog/)   | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://louplummer.lol/feed/)
 | localghost                    | [{{< inline-icon name="link" >}}](https://localghost.dev)         | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://localghost.dev/feed.xml)
 | Mike Stone                    | [{{< inline-icon name="link" >}}](https://mikestone.me)           | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://mikestone.me/feed.xml)
 | P. I. Moore                   | [{{< inline-icon name="link" >}}](https://pimoore.ca)             | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://pimoore.ca/feed.xml)
