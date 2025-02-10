@@ -12,7 +12,7 @@ My collection of cool stuff and cool people who make cool stuff.
 
 | Name                          | Link                                                              | RSS
 |---                            | ---                                                               | ---
-| Ana Rodrigues                 | [{{< inline-icon name="link" >}}](https://ohelloana.blog/posts/)  | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://ohhelloana.blog/feed.xml)
+| Ana Rodrigues                 | [{{< inline-icon name="link" >}}](https://ohhelloana.blog/posts/) | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://ohhelloana.blog/feed.xml)
 | anhvn                         | [{{< inline-icon name="link" >}}](https://anhvn.com)              | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://anhvn.com/feed.xml)
 | A Very Good Blog by Keenan    | [{{< inline-icon name="link" >}}](https://gkeenan.co/avgb)        | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://gkeenan.co/avgb/?format=rss)
 | Cassidy's blog                | [{{< inline-icon name="link" >}}](https://blog.cassidoo.co)       | [{{< inline-icon class="accent-yellow" name="rss" >}}](https://blog.cassidoo.co/rss.xml)
