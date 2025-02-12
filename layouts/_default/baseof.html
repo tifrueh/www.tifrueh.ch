@@ -69,6 +69,7 @@
             <footer>
                 {{- block "footer" . }}
                 <p>&uarr; <a href="#top">Back to top</a> &uarr;</p>
+                <p>&copy; 2024&ndash;{{- time.Now | time.Format "2006" }} Timo Früh, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
                 <p><a href="{{- absURL "/contact/" -}}">Contact</a> &bull; <a href="{{- absURL "/legal-information/" -}}">Legal Information</a></p>
                 {{- end }}
             </footer>
