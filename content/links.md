@@ -30,7 +30,7 @@ My collection of cool stuff and cool people who make cool stuff.
 ## Blogposts
 
 - [The sharpness that
-  bleeds](https://pimoore.ca/posts/the-sharpness-that-bleeds) by Pete Moore.
+  bleeds](https://pimoore.ca/posts/the-sharpness-that-bleeds) by Pete Moore
 
 - [Osa the Dog and the Last
   Goodbye](https://louplummer.lol/osa-the-dog-and-the-last-goodbye/) by Lou
