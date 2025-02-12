@@ -142,6 +142,11 @@ th, td {
 }
 
 hr {
+    color: var(--foreground);
+    background-color: var(--foreground);
+    opacity: 0.6;
+    height: 0.5px;
+    border-width: 0;
     margin: 0 0 1em 0;
 }
 
