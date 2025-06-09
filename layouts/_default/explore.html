@@ -3,7 +3,10 @@
     <div class="content">
         {{ .Content }}
         {{- range .Site.Menus.explore }}
-        <p><a href="{{ .URL }}">{{ .Name }}</a></p>
+        <dl>
+            <dt><a href="{{ .URL }}">{{ .Name }}</a></dt>
+            <dd>{{ .Page.Description }}</dd>
+        </dl>
         {{- end }}
     </div>
 {{- end }}
