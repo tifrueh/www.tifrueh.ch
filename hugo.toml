@@ -36,17 +36,3 @@ section = [ 'html' ]
     noUgly = true
     permalinkable = false
     rel = "alternate"
-
-[menus]
-[[menus.main]]
-    name = '/about'
-    pageRef = '/about'
-    weight = 10
-[[menus.main]]
-    name = '/blog'
-    pageRef = '/blog'
-    weight = 20
-[[menus.main]]
-    name = '/explore'
-    pageRef = '/explore'
-    weight = 30
