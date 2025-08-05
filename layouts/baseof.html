@@ -12,7 +12,7 @@
         <meta property="og:description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:title" content="{{ .Title }}" />
-        <meta property="og:image" content="{{- block "og-image" . }}{{- urls.AbsURL "images/og-index.png" }}{{- end}}" />
+        <meta property="og:image" content="{{- block "og-image" . }}{{- urls.RelURL "images/og-index.png" }}{{- end}}" />
         <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
         <meta property="fediverse:creator" content="@tifrueh@fosstodon.org" />
         {{- with resources.Get "css/stylesheet.css" | resources.Minify }}
@@ -20,12 +20,12 @@
         <style>{{- .Content | safeCSS }}</style>
         {{- end }}
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
-        <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="{{- urls.RelURL "images/favicon-96x96.png" -}}" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="{{- urls.RelURL "images/favicon.svg" -}}" />
+        <link rel="shortcut icon" href="{{- urls.RelURL "favicon.ico" -}}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{- urls.RelURL "images/apple-touch-icon.png" -}}" />
         <meta name="apple-mobile-web-app-title" content="Timo Früh" />
-        <link rel="manifest" href="/config/site.webmanifest" />
+        <link rel="manifest" href="{{- urls.RelURL "config/site.webmanifest" -}}" />
         <meta name="theme-color" content="#282c34" />
         {{- with .Site.Home.OutputFormats.Get "rss" }}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="Posts &#x00B7; {{ site.Title }}" />
@@ -34,7 +34,7 @@
     <body>
         <div class="top-flex-div">
             <header>
-                    <a class="invisible-link" href="/"><h1 id="main-title">{{- .Site.Title }}</h1></a>
+                <a class="invisible-link" href="{{- urls.RelURL "" -}}"><h1 id="main-title">{{- .Site.Title }}</h1></a>
                     <nav class="icon-nav">
                         <a class="icon-nav-button" href="https://github.com/tifrueh" rel="me">
                             <svg class="icon accent-foreground" id="icon-github"><use xlink:href="#github"></use></svg>
@@ -45,7 +45,7 @@
                             Mastodon
                         </a>
                         {{- with .Site.Home.OutputFormats.Get "rss" }}
-                        <a class="icon-nav-button" href="/rss.xml">
+                        <a class="icon-nav-button" href="{{- urls.RelURL "rss.xml" -}}">
                             <svg class="icon accent-yellow" id="icon-rss"><use xlink:href="#rss"></use></svg>
                             Subscribe
                         </a>
@@ -71,7 +71,7 @@
                 {{- block "footer" . }}
                 <hr id="footer-rule"/>
                 <p>&copy; 2024&ndash;{{- time.Now | time.Format "2006" }} Timo Früh, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
-                <p><a href="/contact/">Contact</a> &bull; <a href="/legal-information">Legal Information</a></p>
+                <p><a href="{{- urls.RelURL "contact/" -}}">Contact</a> &bull; <a href="{{- urls.RelURL "legal-information/" -}}">Legal Information</a></p>
                 {{- end }}
             </footer>
         </div>
