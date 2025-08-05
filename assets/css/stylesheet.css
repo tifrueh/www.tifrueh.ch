@@ -290,7 +290,7 @@ blockquote {
 }
 
 .annotated-link-text {
-    text-indent: 2rem;
+    margin-left: 1.5rem;
 }
 
 #main-title {
