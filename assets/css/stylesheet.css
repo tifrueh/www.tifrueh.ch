@@ -285,6 +285,14 @@ blockquote {
     vertical-align: text-top;
 }
 
+.annotated-link {
+    margin-bottom: 0;
+}
+
+.annotated-link-text {
+    text-indent: 2rem;
+}
+
 #main-title {
     color: var(--foreground);
     margin: 0px;
