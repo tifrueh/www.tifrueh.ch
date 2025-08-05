@@ -127,6 +127,12 @@ h1 {
 
 a {
     color: var(--cyan);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: var(--green);
 }
 
 table {
@@ -221,6 +227,7 @@ blockquote {
 }
 
 .main-nav-button:hover, .main-nav-button-now:hover {
+    color: var(--foreground);
     box-shadow: 2px 2px var(--cyan);
 }
 
@@ -233,6 +240,7 @@ blockquote {
 }
 
 .icon-nav-button:hover {
+    color: var(--foreground);
     text-shadow: 1px 1px var(--cyan);
 }
 
@@ -248,6 +256,11 @@ blockquote {
 .summary-link {
     margin-top: 0.2em;
     color: var(--green);
+    transition: color 0.5s;
+}
+
+.summary-link:hover {
+    color: var(--cyan);
 }
 
 .not-found {
