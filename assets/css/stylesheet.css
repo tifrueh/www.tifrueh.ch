@@ -224,12 +224,12 @@ blockquote {
     border-style: solid;
     border-width: 3px;
     border-color: var(--foreground);
-    transition: box-shadow .5s;
+    transition: box-shadow 0.3s;
 }
 
 .main-nav-button:hover, .main-nav-button-now:hover {
     color: var(--foreground);
-    box-shadow: 2px 2px var(--cyan);
+    box-shadow: 3px 3px var(--cyan);
 }
 
 .main-nav-button-now {
@@ -237,7 +237,7 @@ blockquote {
 }
 
 .icon-nav-button {
-    transition: text-shadow 0.5s;
+    transition: text-shadow 0.3s;
 }
 
 .icon-nav-button:hover {
@@ -296,11 +296,11 @@ blockquote {
 #main-title {
     color: var(--foreground);
     margin: 0px;
-    transition: text-shadow 0.5s;
+    transition: text-shadow 0.3s;
 }
 
 #main-title:hover {
-    text-shadow: 1px 1px var(--cyan);
+    text-shadow: 2px 2px var(--cyan);
 }
 
 #four-o-four {
