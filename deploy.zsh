@@ -9,7 +9,7 @@ printt () {
 }
 
 install () {
-    RSYNC_CMD="sudo rsync --del --chown www-data:www-data -vrlpt '${2}' '${3}'"
+    RSYNC_CMD="rsync --del -vrlpt '${2}' '${3}'"
     printt "BEGIN RSYNC ${1}"
     printf '%s\n' "$RSYNC_CMD"
     read 'CONT?Continue? [y/N] '
