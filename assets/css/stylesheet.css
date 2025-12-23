@@ -102,6 +102,9 @@ header {
 
 main {
     flex-grow: 1;
+}
+
+main p {
     text-align: justify;
     hyphens: auto;
 }
