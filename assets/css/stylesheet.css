@@ -102,6 +102,8 @@ header {
 
 main {
     flex-grow: 1;
+    text-align: justify;
+    hyphens: auto;
 }
 
 footer {
