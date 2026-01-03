@@ -215,13 +215,17 @@ blockquote {
 }
 
 .summary-timestamp {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.2rem;
 }
 
 .summary-link {
-    margin-top: 0.2em;
+    margin: 0.4rem 0;
     color: var(--green);
     transition: color 0.5s;
+}
+
+.summary-description {
+    margin-top: 0.2rem;
 }
 
 .summary-link:hover {
