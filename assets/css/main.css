@@ -123,20 +123,20 @@ hr {
 code {
     font-family: 'Source Code Pro', monospace;
     padding: .2em .4em;
-    font-size: 85%;
+    font-size: .85rem;
     background-color: var(--background-code);
     border-radius: 6px;
 }
 
 pre code {
     padding: 0;
-    font-size: 100%;
     border-radius: 0;
     background-color: var(--background);
 }
 
 div.chroma {
     width: 100%;
+    font-size: .85rem;
     overflow-x: auto;
     scrollbar-color: var(--scrollbar) var(--background);
 }
