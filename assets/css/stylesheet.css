@@ -8,6 +8,10 @@
     --foreground:               #dcdfe4;
     --background:               #282c34;
     --background-code:          #191e26;
+    --scrollbar:                #3d4148;
+    --border-color:             #dcdfe4;
+    --border-thickness:         1px;
+    --width:                    80ch;
 }
 
 .accent-red {
@@ -86,7 +90,7 @@ html, body {
 }
 
 header, main, footer {
-    max-width: 80ch;
+    max-width: var(--width);
     width: 80%;
 }
 
@@ -123,11 +127,6 @@ h4,
 h5,
 h6 {
     color: var(--blue);
-    margin: 1.5em 0 0.5em 0;
-}
-
-h1 {
-    margin: 0 0 0.5em 0;
 }
 
 a {
@@ -141,42 +140,45 @@ a:hover {
 }
 
 table {
-    display: block;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border-bottom: var(--border-thickness) var(--border-color) solid;
     border-collapse: collapse;
-    overflow: auto;
 }
 
 th, td {
-    border: 1px solid;
-    padding: 10px;
-    width: 100%;
+    padding: 0.5rem 1rem;
 }
 
 hr {
     height: 0px;
     border: none;
-    border-top: 1px solid var(--foreground);
+    border-top: var(--border-thickness) solid var(--border-color);
     margin: 0 0 1em 0;
 }
 
 code {
     font-family: 'Source Code Pro', monospace;
-    font-size: 0.9em;
-}
-
-p code {
+    padding: .2em .4em;
+    font-size: 85%;
     background-color: var(--background-code);
-    padding: 0.2em 0.4em;
     border-radius: 6px;
 }
 
-p {
-    margin: 0 0 1em 0;
+pre code {
+    padding: 0;
+    font-size: 100%;
+    border-radius: 0;
+    background-color: var(--background);
 }
 
-footer p {
-    margin: 0 0 0.5em 0;
+div.chroma {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-color: var(--scrollbar) var(--background);
 }
 
 blockquote {
@@ -342,6 +344,8 @@ blockquote {
         --foreground:           #383a42;
         --background:           #fafafa;
         --background-code:      #e2e2e2;
+        --scrollbar:            #e2e2e2;
+        --border-color:         #383a42;
     }
 
     nav.icon-nav {
