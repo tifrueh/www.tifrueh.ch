@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url(/fonts/source-serif-4/source-serif-4-italic-var_opsz,wght.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url(/fonts/source-serif-4/source-serif-4-var_opsz,wght.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url(/fonts/source-code-pro/source-code-pro-italic-var_opsz,wght.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url(/fonts/source-code-pro/source-code-pro-var_opsz,wght.ttf) format('ttf');
+}

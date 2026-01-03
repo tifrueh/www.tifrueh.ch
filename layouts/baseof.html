@@ -4,19 +4,20 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
-        <link href="{{- with resources.Get "fonts/SourceSerif4-Bold.otf.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
-        <link href="{{- with resources.Get "fonts/SourceSerif4-It.otf.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
-        <link href="{{- with resources.Get "fonts/SourceSerif4-Regular.otf.woff2"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/woff2" as="font" crossorigin="" />
-        {{- with resources.Get "fonts/SourceSerif4-BoldIt.otf.woff2"}}{{- .Publish }}{{- end }}
-        {{- with resources.Get "fonts/SourceCodePro-Regular.otf.woff2"}}{{- .Publish }}{{- end }}
+        <link href="{{- with resources.Get "fonts/source-code-pro/source-code-pro-italic-var_wght.ttf"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/ttf" as="font" crossorigin="" />
+        <link href="{{- with resources.Get "fonts/source-code-pro/source-code-pro-var_wght.ttf"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/ttf" as="font" crossorigin="" />
+        <link href="{{- with resources.Get "fonts/source-serif-4/source-serif-4-italic-var_opsz,wght.ttf"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/ttf" as="font" crossorigin="" />
+        <link href="{{- with resources.Get "fonts/source-serif-4/source-serif-4-var_opsz,wght.ttf"}}{{- .RelPermalink }}{{- end }}" rel="preload" type="font/ttf" as="font" crossorigin="" />
         <meta property="og:description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:title" content="{{ .Title }}" />
         <meta property="og:image" content="{{- block "og-image" . }}{{- urls.RelURL "images/og-index.png" }}{{- end}}" />
         <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
         <meta property="fediverse:creator" content="@tifrueh@fosstodon.org" />
-        {{- with resources.Get "css/stylesheet.css" | resources.Minify }}
-        {{- .Publish }}
+        {{- with resources.Get "css/fonts.css" | resources.Minify }}
+        <style>{{- .Content | safeCSS }}</style>
+        {{- end }}
+        {{- with resources.Get "css/main.css" | resources.Minify }}
         <style>{{- .Content | safeCSS }}</style>
         {{- end }}
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
