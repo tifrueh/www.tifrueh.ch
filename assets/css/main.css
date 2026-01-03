@@ -100,17 +100,21 @@ a:hover {
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 table, th, td {
+    text-align: left;
     border-bottom: var(--border-thickness) var(--border-color) solid;
     border-collapse: collapse;
 }
 
 th, td {
     padding: 0.5rem 1rem;
+}
+
+table.lntable {
+    width: auto;
 }
 
 hr {
