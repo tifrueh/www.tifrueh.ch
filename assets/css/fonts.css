@@ -3,7 +3,7 @@
     font-style: italic;
     font-weight: 200 900;
     font-display: swap;
-    src: url(/fonts/source-serif-4/source-serif-4-italic-var_opsz,wght.ttf) format('ttf');
+    src: url('/fonts/source-serif-4/source-serif-4-italic-var_opsz,wght.ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 200 900;
     font-display: swap;
-    src: url(/fonts/source-serif-4/source-serif-4-var_opsz,wght.ttf) format('ttf');
+    src: url('/fonts/source-serif-4/source-serif-4-var_opsz,wght.ttf');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style: italic;
     font-weight: 200 900;
     font-display: swap;
-    src: url(/fonts/source-code-pro/source-code-pro-italic-var_opsz,wght.ttf) format('ttf');
+    src: url('/fonts/source-code-pro/source-code-pro-italic-var_opsz,wght.ttf');
 }
 
 @font-face {
@@ -27,5 +27,5 @@
     font-style: normal;
     font-weight: 200 900;
     font-display: swap;
-    src: url(/fonts/source-code-pro/source-code-pro-var_opsz,wght.ttf) format('ttf');
+    src: url('/fonts/source-code-pro/source-code-pro-var_opsz,wght.ttf');
 }
