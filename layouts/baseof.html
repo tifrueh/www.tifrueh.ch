@@ -21,12 +21,14 @@
         <style>{{- .Content | safeCSS }}</style>
         {{- end }}
         <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
-        <link rel="icon" type="image/png" href="{{- urls.RelURL "images/favicon-96x96.png" -}}" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="{{- urls.RelURL "images/favicon.svg" -}}" />
-        <link rel="shortcut icon" href="{{- urls.RelURL "favicon.ico" -}}" />
-        <link rel="apple-touch-icon" sizes="180x180" href="{{- urls.RelURL "images/apple-touch-icon.png" -}}" />
+        <link rel="icon" type="image/png" href="{{- with resources.Get "images/favicon-96x96.png" -}}{{- .RelPermalink }}{{- end }}" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="{{- with resources.Get "images/favicon.svg" -}}{{- .RelPermalink }}{{- end }}" />
+        <link rel="shortcut icon" href="{{- with resources.Get "favicon.ico" -}}{{- .RelPermalink }}{{- end }}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{- with resources.Get "images/apple-touch-icon.png" -}}{{- .RelPermalink }}{{- end }}" />
         <meta name="apple-mobile-web-app-title" content="Timo Früh" />
-        <link rel="manifest" href="{{- urls.RelURL "config/site.webmanifest" -}}" />
+        <link rel="manifest" href="{{- with resources.Get "config/site.webmanifest" -}}{{- .RelPermalink }}{{- end }}" />
+        {{- with resources.Get "images/web-app-manifest-192x192.png" }}{{- .Publish }}{{- end }}
+        {{- with resources.Get "images/web-app-manifest-512x512.png" }}{{- .Publish }}{{- end }}
         <meta name="theme-color" content="#282c34" />
         {{- with .Site.Home.OutputFormats.Get "rss" }}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="Posts &#x00B7; {{ site.Title }}" />
