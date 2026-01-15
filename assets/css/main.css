@@ -275,7 +275,7 @@ p.annotated-link {
 
 p.annotated-link-text {
     margin-top: 0 !important;
-    text-indent: 1.5rem;
+    margin-left: 1.5rem !important;
 }
 
 #main-title {
