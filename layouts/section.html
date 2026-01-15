@@ -2,6 +2,8 @@
     <h1>{{ .Title }}</h1>
     <div class="content">
         {{ .Content }}
+    </div>
+    <div class="pages">
         {{- range .Pages }}
         <hr />
         {{ .Render "summary" }}

@@ -68,9 +68,21 @@ main {
     flex-grow: 1;
 }
 
-main p {
+div.content p {
     text-align: justify;
     hyphens: auto;
+    line-height: 1.62;
+    margin: 1.5em 0;
+}
+
+div.content h2 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+sup {
+    line-height: 1;
+    font-size: 0.8rem;
 }
 
 footer {
@@ -257,12 +269,13 @@ blockquote {
     vertical-align: text-top;
 }
 
-.annotated-link {
-    margin-bottom: 0;
+p.annotated-link {
+    margin-bottom: 0 !important;
 }
 
-.annotated-link-text {
-    margin-left: 1.5rem;
+p.annotated-link-text {
+    margin-top: 0 !important;
+    text-indent: 1.5rem;
 }
 
 #main-title {
