@@ -1,4 +1,4 @@
-{{- define "og-image" }}{{- urls.RelURL "images/og-blog.png" }}{{- end }}
+{{- define "og-image" }}{{- with resources.Get "images/og-blog.png" }}{{- .Permalink }}{{- end }}{{- end }}
 {{- define "og-type" }}article{{- end }}
 {{- define "main" }}
 <hr />
