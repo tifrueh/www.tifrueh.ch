@@ -24,9 +24,9 @@
         </p>
         <hr />
         <h1>Web Feed Preview</h1>
-        <p>
-            <p><xsl:value-of select="/rss/channel/description" />&#x2002;<a><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link" /></xsl:attribute>&#x2192; Visit website</a></p>
-        </p>
+        <p><strong>Feed Title:&#x2002;</strong><xsl:value-of select="/rss/channel/title" /></p>
+        <p><strong>Feed Description:&#x2002;</strong><xsl:value-of select="/rss/channel/description" /></p>
+        <p><a><xsl:attribute name="href"><xsl:value-of select="/rss/channel/link" /></xsl:attribute>&#x2192; Visit website</a></p>
         <h2>Recent posts</h2>
         <xsl:for-each select="/rss/channel/item">
             <p class="summary-timestamp"><xsl:value-of select="pubDate" /></p>
