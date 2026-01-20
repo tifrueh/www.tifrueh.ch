@@ -1,6 +1,6 @@
 {{- define "main" }}
     <h1>{{ .Title }}</h1>
-    <div class="content">
+    <div class="content{{- if .Param "book-style" }} book-style{{- end }}">
         {{ .Content }}
     </div>
     <div class="pages">

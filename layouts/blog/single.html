@@ -5,7 +5,7 @@
 <h1>{{ .Title }}</h1>
 <p>{{ .PublishDate | time.Format "2006-01-02 15:04 -07:00" }}</p>
 <hr />
-<div class="content">
+<div class="content{{- if .Param "book-style" }} book-style{{- end }}">
     {{ .Content }}
 </div>
 {{- end }}

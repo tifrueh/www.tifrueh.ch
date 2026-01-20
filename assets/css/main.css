@@ -75,9 +75,32 @@ div.content p {
     margin: 1.5em 0;
 }
 
-div.content h2 {
-    margin-top: 2em;
+div.book-style::first-line,
+div.book-style h2 + p::first-line {
+    font-variant: small-caps;
+}
+
+div.book-style > p:has(+p) {
     margin-bottom: 0;
+}
+
+div.book-style > p + p {
+    margin-top: 0;
+    text-indent: 1em;
+}
+
+div.book-style > h2:has(+p),
+div.book-style > h3:has(+p) {
+    margin-bottom: 0.25em;
+}
+
+div.book-style > h2 + p,
+div.book-style > h3 + p {
+    margin-top: 0.25em;
+}
+
+div.footnotes {
+    margin: 1.5em 0;
 }
 
 sup {
