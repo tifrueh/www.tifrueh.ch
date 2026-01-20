@@ -75,7 +75,7 @@ div.content p {
     margin: 1.5em 0;
 }
 
-div.book-style::first-line,
+div.book-style > p:first-child::first-line,
 div.book-style h2 + p::first-line {
     font-variant: small-caps;
 }
