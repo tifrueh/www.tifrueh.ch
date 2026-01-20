@@ -1,5 +1,10 @@
 {{- define "main" }}
     <h1>{{ .Title }}</h1>
+    {{- if .Param "word-count" }}
+    <div class="wc">
+        <p>&sim; {{ $wc := .WordCount }}{{ lang.FormatNumberCustom 0 $wc "- . '" }} words</p>
+    </div>
+    {{- end }}
     <div class="content{{- if .Param "book-style" }} book-style{{- end }}">
         {{ .Content }}
     </div>

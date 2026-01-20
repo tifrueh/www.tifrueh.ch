@@ -103,6 +103,10 @@ div.footnotes {
     margin: 1.5em 0;
 }
 
+.wc {
+    font-style: italic;
+}
+
 sup {
     line-height: 1;
     font-size: 0.8rem;
