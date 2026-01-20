@@ -4,4 +4,8 @@ date = {{ .Date }}
 lastmod = {{ .Date }}
 description = ""
 draft = true
+
+[params]
+    book-style = true
+    word-count = true
 +++
