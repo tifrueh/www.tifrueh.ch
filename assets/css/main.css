@@ -68,6 +68,19 @@ main {
     flex-grow: 1;
 }
 
+hr {
+    height: 0px;
+    border: none;
+    border-top: var(--border-thickness) solid var(--border-color);
+    margin: 0 0 1em 0;
+}
+
+hr.ornamental {
+    width: 20%;
+    margin: 1em auto;
+}
+
+
 div.content p {
     text-align: justify;
     hyphens: auto;
@@ -101,6 +114,25 @@ div.book-style > h3 + p {
 
 div.footnotes {
     margin: 1.5em 0;
+}
+
+div.book-style > hr.ornamental {
+    text-align: center;
+    overflow: visible;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: var(--foreground);
+        color: var(--foreground);
+        margin: 0 0 0 -4px;
+        padding: 1px;
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        top: -5px;
+        transform:rotate(45deg);
+    }
 }
 
 .wc {
@@ -155,13 +187,6 @@ th, td {
 
 table.lntable {
     width: auto;
-}
-
-hr {
-    height: 0px;
-    border: none;
-    border-top: var(--border-thickness) solid var(--border-color);
-    margin: 0 0 1em 0;
 }
 
 code {
@@ -377,6 +402,10 @@ p.annotated-link-text {
 
     footer {
         margin-top: 1rem;
+    }
+
+    div.book-style > hr.ornamental::before {
+        display: none;
     }
 }
 
