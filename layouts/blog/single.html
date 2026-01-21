@@ -5,6 +5,10 @@
 <h1>{{ .Title }}</h1>
 <p>{{ .PublishDate | time.Format "2006-01-02 15:04 -07:00" }}{{- if .Param "word-count" }} &#x2551; <span class="wc"> &sim; {{ $wc := .WordCount }}{{ lang.FormatNumberCustom 0 $wc "- . '" }} words</span>{{- end }}</p>
 <hr />
+{{- if .Param "table-of-contents" }}
+{{ .TableOfContents }}
+<hr />
+{{- end }}
 <div class="content{{- if .Param "book-style" }} book-style{{- end }}">
     {{ .Content }}
 </div>

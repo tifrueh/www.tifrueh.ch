@@ -335,6 +335,12 @@ p.annotated-link-text {
     margin-left: 1.5rem !important;
 }
 
+#TableOfContents ul {
+    list-style-type: none;
+    margin: var(--paragraph-spacing) 0;
+    padding: 0;
+}
+
 #main-title {
     color: var(--foreground);
     margin: 0px;
