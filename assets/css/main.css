@@ -12,6 +12,7 @@
     --border-color:             #dcdfe4;
     --border-thickness:         1px;
     --width:                    80ch;
+    --paragraph-spacing:        1.5em;
 }
 
 .accent-red {
@@ -72,12 +73,16 @@ hr {
     height: 0px;
     border: none;
     border-top: var(--border-thickness) solid var(--border-color);
-    margin: 0 0 1em 0;
+    margin: var(--paragraph-spacing) 0;
+}
+
+hr:first-child {
+    margin: 0 0 var(--paragraph-spacing) 0;
 }
 
 hr.ornamental {
     width: 20%;
-    margin: 1em auto;
+    margin: var(--paragraph-spacing) auto;
 }
 
 
@@ -85,7 +90,7 @@ div.content p {
     text-align: justify;
     hyphens: auto;
     line-height: 1.62;
-    margin: 1.5em 0;
+    margin: var(--paragraph-spacing) 0;
 }
 
 div.book-style > p:first-child::first-line,
@@ -113,7 +118,7 @@ div.book-style > h3 + p {
 }
 
 div.footnotes {
-    margin: 1.5em 0;
+    margin: var(--paragraph-spacing) 0;
 }
 
 div.book-style > hr.ornamental {
@@ -171,7 +176,7 @@ a:hover {
 }
 
 table {
-    margin: 1.5em 0;
+    margin: var(--paragraph-spacing) 0;
     width: 100%;
 }
 
@@ -211,7 +216,7 @@ div.chroma {
 }
 
 blockquote {
-    margin: 0 0 1em 0;
+    margin: 0 0 var(--paragraph-spacing) 0;
     padding: 0 1em;
     border-radius: 3px;
     border-left: 3px solid var(--foreground);
