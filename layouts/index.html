@@ -6,7 +6,7 @@
     {{ .Content }}
 </div>
 <div class="pages">
-    <h2>Latest Posts</h2>
+    <h2 class="nounderline">Latest Posts</h2>
     {{- range first 4 (where .Site.RegularPages "Section" "blog") }}
     <hr />
     {{ .Render "summary" }}

@@ -109,12 +109,12 @@ div.book-style > p + p {
 
 div.book-style > h2:has(+p),
 div.book-style > h3:has(+p) {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
 }
 
 div.book-style > h2 + p,
 div.book-style > h3 + p {
-    margin-top: 0.25em;
+    margin-top: 0.5em;
 }
 
 div.footnotes {
@@ -163,6 +163,16 @@ h4,
 h5,
 h6 {
     color: var(--blue);
+}
+
+h2 {
+    border-bottom: var(--border-thickness) var(--border-color) solid;
+    padding-bottom: 0.5em;
+}
+
+h2.nounderline {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 a {
