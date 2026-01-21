@@ -218,7 +218,6 @@ div.chroma {
 blockquote {
     margin: 0 0 var(--paragraph-spacing) 0;
     padding: 0 1em;
-    border-radius: 3px;
     border-left: 3px solid var(--foreground);
     font-style: italic;
 }
