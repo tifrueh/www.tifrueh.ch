@@ -80,12 +80,6 @@ hr:first-child {
     margin: 0 0 var(--paragraph-spacing) 0;
 }
 
-hr.ornamental {
-    width: 20%;
-    margin: var(--paragraph-spacing) auto;
-}
-
-
 div.content p {
     text-align: justify;
     hyphens: auto;
@@ -121,7 +115,9 @@ div.footnotes {
     margin: var(--paragraph-spacing) 0;
 }
 
-div.book-style > hr.ornamental {
+div.book-style > hr {
+    width: 20%;
+    margin: var(--paragraph-spacing) auto;
     text-align: center;
     overflow: visible;
     position: relative;
