@@ -210,6 +210,7 @@ code {
     font-size: .85rem;
     background-color: var(--background-code);
     border-radius: 6px;
+    -webkit-text-size-adjust: 100%;
 }
 
 pre code {
