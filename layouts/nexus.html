@@ -4,11 +4,11 @@
         {{ .Content }}
     </div>
     <div class="pages" >
-        {{- range .Site.Menus.nexus }}
         <dl>
+        {{- range .Site.Menus.nexus }}
             <dt><a href="{{ .URL }}">{{ .Name }}</a></dt>
             <dd>{{ .Page.Description }}</dd>
-        </dl>
         {{- end }}
+        </dl>
     </div>
 {{- end }}
