@@ -1,0 +1,27 @@
+<a class="invisible-link" href="{{- urls.RelURL "" -}}"><h1 id="main-title">{{- .Site.Title }}</h1></a>
+<nav class="icon-nav">
+    <a class="icon-nav-button" href="https://github.com/tifrueh" rel="me">
+        <svg class="icon accent-foreground" id="icon-github"><use xlink:href="#github"></use></svg>
+        GitHub
+    </a>
+    <a class="icon-nav-button" href="https://fosstodon.org/@tifrueh" rel="me">
+        <svg class="icon accent-magenta" id="icon-mastodon"><use xlink:href="#mastodon"></use></svg>
+        Mastodon
+    </a>
+    {{- with .Site.Home.OutputFormats.Get "rss" }}
+    <a class="icon-nav-button" href="{{- urls.RelURL "rss.xml" -}}">
+        <svg class="icon accent-yellow" id="icon-rss"><use xlink:href="#rss"></use></svg>
+        Subscribe
+    </a>
+    {{- end }}
+</nav>
+<nav class="main-nav">
+    {{- $currentPage := . }}
+    {{- range .Site.Menus.main }}
+    {{- if $currentPage.IsMenuCurrent .Menu . }}
+        <a class="main-nav-button-now" href="{{ .URL }}">{{ .Name }}</a>
+    {{- else }}
+        <a class="main-nav-button" href="{{ .URL }}">{{ .Name }}</a>
+    {{- end }}
+    {{- end }}
+</nav>

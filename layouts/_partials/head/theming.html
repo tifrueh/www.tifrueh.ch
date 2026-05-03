@@ -1,0 +1,9 @@
+<link rel="icon" type="image/png" href="{{- with resources.Get "images/favicon-96x96.png" -}}{{- .RelPermalink }}{{- end }}" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="{{- with resources.Get "images/favicon.svg" -}}{{- .RelPermalink }}{{- end }}" />
+<link rel="shortcut icon" href="{{- with resources.Get "favicon.ico" -}}{{- .RelPermalink }}{{- end }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{- with resources.Get "images/apple-touch-icon.png" -}}{{- .RelPermalink }}{{- end }}" />
+<meta name="apple-mobile-web-app-title" content="Timo Früh" />
+<link rel="manifest" href="{{- with resources.Get "config/site.webmanifest" -}}{{- .RelPermalink }}{{- end }}" />
+{{- with resources.Get "images/web-app-manifest-192x192.png" }}{{- .Publish }}{{- end }}
+{{- with resources.Get "images/web-app-manifest-512x512.png" }}{{- .Publish }}{{- end }}
+<meta name="theme-color" content="#282c34" />
