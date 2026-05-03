@@ -5,6 +5,11 @@
         <p>&sim; {{ $wc := .WordCount }}{{ lang.FormatNumberCustom 0 $wc "- . '" }} words</p>
     </div>
     {{- end }}
+    {{- if .Param "table-of-contents" }}
+    <hr />
+    {{ .TableOfContents }}
+    <hr />
+    {{- end }}
     <div class="content{{- if .Param "book-style" }} book-style{{- end }}">
         {{ .Content }}
     </div>
