@@ -17,14 +17,14 @@ disableKinds = [ 'taxonomy', 'term' ]
     noClasses = false
 [markup.goldmark]
 [markup.goldmark.extensions]
-    [markup.goldmark.extensions.passthrough]
-        enable = true
-    [markup.goldmark.extensions.passthrough.delimiters]
-        block = [['$$', '$$']]
-        inline = [['$', '$']]
+[markup.goldmark.extensions.passthrough]
+    enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+    block = [['$$', '$$']]
+    inline = [['$', '$']]
 
 [frontmatter]
-publishDate = [ 'date', 'publishDate' ]
+    publishDate = [ 'date', 'publishDate' ]
 
 [params]
     math = false
@@ -32,8 +32,8 @@ publishDate = [ 'date', 'publishDate' ]
     name = "Timo Früh"
 
 [outputs]
-home = [ 'html', 'rss' ]
-section = [ 'html' ]
+    home = [ 'html', 'rss' ]
+    section = [ 'html' ]
 
 [outputFormats]
 [outputFormats.rss]
