@@ -3,6 +3,7 @@
 @import './chroma.css';
 @import './print.css' print;
 @import './mobile.css' only screen and (max-width: 768px);
+@import './alerts.css';
 
 .accent-red {
     color: var(--red);

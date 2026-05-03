@@ -1,0 +1,57 @@
+blockquote.alert {
+    font-style: normal;
+}
+
+blockquote.alert p.alert-heading {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+blockquote.alert-note {
+    border-color: var(--blue);
+}
+
+blockquote.alert-note p.alert-heading {
+    color: var(--blue);
+}
+
+blockquote.alert-tip {
+    border-color: var(--green);
+}
+
+blockquote.alert-tip p.alert-heading {
+    color: var(--green);
+}
+
+blockquote.alert-important {
+    border-color: var(--magenta);
+}
+
+blockquote.alert-important p.alert-heading {
+    color: var(--magenta);
+}
+
+blockquote.alert-warning {
+    border-color: var(--yellow);
+}
+
+blockquote.alert-warning p.alert-heading {
+    color: var(--yellow);
+}
+
+blockquote.alert-caution {
+    border-color: var(--red);
+}
+
+blockquote.alert-caution p.alert-heading {
+    color: var(--red);
+}
+
+svg.alert-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top;
+    margin-right: 0.5rem;
+}
