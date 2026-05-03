@@ -15,11 +15,19 @@ disableKinds = [ 'taxonomy', 'term' ]
     lineNos = true
     tabWidth = 4
     noClasses = false
+[markup.goldmark]
+[markup.goldmark.extensions]
+    [markup.goldmark.extensions.passthrough]
+        enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['$$', '$$']]
+        inline = [['$', '$']]
 
 [frontmatter]
 publishDate = [ 'date', 'publishDate' ]
 
 [params]
+    math = false
 [params.author]
     name = "Timo Früh"
 
