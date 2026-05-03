@@ -28,6 +28,9 @@ disableKinds = [ 'taxonomy', 'term' ]
 
 [params]
     math = false
+    word-count = false
+    table-of-contents = false
+    book-style = false
 [params.author]
     name = "Timo Früh"
 
