@@ -1,0 +1,39 @@
+:root {
+    --red:                  #e45649;
+    --green:                #50a14f;
+    --yellow:               #c18401;
+    --blue:                 #0184bc;
+    --magenta:              #a626a4;
+    --cyan:                 #0997b3;
+    --foreground:           #383a42;
+    --background:           #fafafa;
+    --background-code:      #e2e2e2;
+    --scrollbar:            #e2e2e2;
+    --border-color:         #383a42;
+}
+
+nav.icon-nav {
+    display: none !important;
+}
+
+nav.main-nav {
+    display: none !important;
+}
+
+div.top-flex-div {
+    display: block;
+}
+
+header, main, footer {
+    max-width: none;
+    width: auto;
+    padding: 0 1rem;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+div.book-style > hr.ornamental::before {
+    display: none;
+}

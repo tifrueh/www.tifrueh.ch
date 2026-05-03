@@ -1,0 +1,16 @@
+:root {
+    --red:                      #e06c75;
+    --green:                    #98c379;
+    --yellow:                   #e5c07b;
+    --blue:                     #61afef;
+    --magenta:                  #c678dd;
+    --cyan:                     #56b6c2;
+    --foreground:               #dcdfe4;
+    --background:               #282c34;
+    --background-code:          #191e26;
+    --scrollbar:                #3d4148;
+    --border-color:             #dcdfe4;
+    --border-thickness:         1px;
+    --width:                    80ch;
+    --paragraph-spacing:        1.5em;
+}
