@@ -329,8 +329,17 @@ blockquote {
 
 #TableOfContents ul {
     list-style-type: none;
-    margin: var(--paragraph-spacing) 0;
-    padding: 0;
+    margin: 1ch 0;
+    padding-left: 2ch;
+}
+
+#TableOfContents>ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#TableOfContents li {
+    margin-bottom: 1ch;
 }
 
 #main-title {
