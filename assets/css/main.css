@@ -186,6 +186,10 @@ th, td {
     padding: 0.5rem 1rem;
 }
 
+dt {
+    margin-top: 1rem;
+}
+
 table.lntable {
     width: auto;
 }
@@ -321,15 +325,6 @@ blockquote {
     width: 1.3em;
     height: 1.3em;
     vertical-align: text-top;
-}
-
-p.annotated-link {
-    margin-bottom: 0 !important;
-}
-
-p.annotated-link-text {
-    margin-top: 0 !important;
-    margin-left: 1.5rem !important;
 }
 
 #TableOfContents ul {
