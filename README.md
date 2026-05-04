@@ -16,3 +16,11 @@ This is the HUGO theme module I wrote for my personal website.
 | `math`                | `false`               | Load MathJax to display math on the page.                     |
 | `table-of-contents`   | `false`               | Show a table of contents at the beginning of a page.          |
 | `word-count`          | `false`               | Show the rough amount of words on a page at its beginning.    |
+
+## Configuration Merge
+
+The configuration settings potentially relevant for merging in `hugo.toml` are
+within:
+
+* `[markup.highlight]`
+* `[outputFormats.rss]`
