@@ -327,6 +327,11 @@ blockquote {
     vertical-align: text-top;
 }
 
+#content-commit-hash {
+    font-style: italic;
+    opacity: 0.71;
+}
+
 #TableOfContents ul {
     list-style-type: none;
     margin: 1ch 0;
