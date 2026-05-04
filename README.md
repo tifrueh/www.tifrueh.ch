@@ -6,7 +6,7 @@ This is the HUGO theme module I wrote for my personal website.
 
 | Parameter             | Default Value         | Description                                                   |
 | ---                   | ---                   | ---                                                           |
-| `author`              | NONE                  | The author to put into the copyright notice.                  |
+| `author.name`         | NONE                  | The author to put into the copyright notice.                  |
 
 ## Custom Page Parameters
 
