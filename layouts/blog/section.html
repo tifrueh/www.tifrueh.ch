@@ -4,11 +4,10 @@
         {{ .Content }}
     </div>
     <div class="pages">
-        <dl>
         {{- range .Pages }}
-        <dt><a href="{{ .RelPermalink }}">{{ .Title }}</a></dt>
-        <dd>{{ .Description }}</dd>
+        <hr />
+        {{ .Render "summary" }}
         {{- end }}
-        </dl>
+        <hr />
     </div>
 {{- end }}
