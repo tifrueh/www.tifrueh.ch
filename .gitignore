@@ -1,7 +1,2 @@
-public/
-resources/
-content/
-
-.DS_Store
-
 *.lock
+go.*

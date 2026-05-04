@@ -1,15 +1,3 @@
-baseURL = 'https://www.tifrueh.ch/'
-locale = 'en-GB'
-title = 'Timo Früh'
-copyright = 'All work is licensed under CC BY-SA 4.0, unless stated otherwise.'
-defaultContentLanguage = 'en'
-pluralizeListTitles = false
-disableKinds = [ 'taxonomy', 'term' ]
-
-[permalinks]
-[permalinks.page]
-    blog = '/blog/:year/:month/:slug'
-
 [markup]
 [markup.highlight]
     lineNos = true
@@ -23,17 +11,6 @@ disableKinds = [ 'taxonomy', 'term' ]
     block = [['$$', '$$']]
     inline = [['$', '$']]
 
-[frontmatter]
-    publishDate = [ 'date', 'publishDate' ]
-
-[params]
-[params.author]
-    name = "Timo Früh"
-
-[outputs]
-    home = [ 'html', 'rss' ]
-    section = [ 'html' ]
-
 [outputFormats]
 [outputFormats.rss]
     baseName = "rss"
@@ -43,3 +20,8 @@ disableKinds = [ 'taxonomy', 'term' ]
     noUgly = true
     permalinkable = false
     rel = "alternate"
+
+[module]
+[module.hugoVersion]
+    extended = true
+    min = "0.158.0"
