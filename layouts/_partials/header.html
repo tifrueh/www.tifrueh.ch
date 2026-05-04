@@ -18,7 +18,7 @@
 <nav class="main-nav">
     {{- $currentPage := . }}
     {{- range .Site.Menus.main }}
-    {{- if $currentPage.IsMenuCurrent .Menu . }}
+    {{- if or (.Page.IsAncestor $currentPage) ($currentPage.IsMenuCurrent .Menu .) }}
         <a class="main-nav-button-now" href="{{ .URL }}">{{ .Name }}</a>
     {{- else }}
         <a class="main-nav-button" href="{{ .URL }}">{{ .Name }}</a>
