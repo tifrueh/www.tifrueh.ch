@@ -10,7 +10,7 @@
     <title>Posts &#x2022; {{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Home.Description }}</description>
-    <language>{{ site.Language.LanguageCode }}</language>
+    <language>{{ .Language.Locale }}</language>
     <copyright>{{ .Site.Copyright }}</copyright>
     <lastBuildDate>{{ (index $posts.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     {{- with .OutputFormats.Get "RSS" }}
