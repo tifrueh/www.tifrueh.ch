@@ -1,25 +1,26 @@
 #!/bin/zsh
 
-# = EXTERNAL VARIABLES =========================================================
+# === EXTERNAL VARIABLES =======================================================
 #
-# WWW_TIFRUEH_HUGO      Path to the hugo root.
-# WWW_TIFRUEH_USR       User to which to rsync.
-# WWW_TIFRUEH_HEADLESS  Set to some value to run non-interactively.
-# WWW_TIFRUEH_WWW       Path to the webserver root.
-# WWW_TIFRUEH_WWW_DFT   Path to the webserver root (drafts).
-#
-# ==============================================================================
+# WWW_TIFRUEH_USER      Remote user to use.
+# WWW_TIFRUEH_HOST      Remote host to use.
+# WWW_TIFRUEH_PATH      Remote path to use.
+# WWW_TIFRUEH_PATH_DFT  Remote path to use for drafts.
 
-# = INTERNAL VARIABLES =========================================================
+# Run in script directory.
+cd "${0:A:h}"
 
-hugo="${WWW_TIFRUEH_HUGO}"
-hugo_public="${hugo}/public/pub/"
-hugo_public_dft="${hugo}/public/dft/"
-hugo_content="${hugo}/content/"
-hugo_info_txt="${hugo}/static/info.txt"
-www="${WWW_TIFRUEH_WWW}"
-www_dft="${WWW_TIFRUEH_WWW_DFT}"
+# === HELPER VARIABLES =========================================================
 
+ruser="${WWW_TIFRUEH_USER:-user}"
+rhost="${WWW_TIFRUEH_HOST:-host}"
+rpath="${WWW_TIFRUEH_PATH:-path}"
+rpath_dft="${WWW_TIFRUEH_PATH_DFT:-path_dft}"
+hugo_static="./static/"
+hugo_public="./public/"
+hugo_public_dft="./public-dft/"
+hugo_content="./content/"
+hugo_info_txt="${hugo_static}/info.txt"
 info_template="info.txt
 ========
 
@@ -32,13 +33,7 @@ Version Information
 -------------------
 "
 
-if [ -n "$WWW_TIFRUEH_USR" ]; then
-    rsync_prefix="sudo -u ${WWW_TIFRUEH_USR} "
-else
-    rsync_prefix=""
-fi
-
-# = FUNCTIONS ==================================================================
+# === HELPER FUNCTIONS =========================================================
 
 # Print a title.
 #
@@ -61,11 +56,9 @@ printt () {
 # Description:
 #   CMD         The command to evaluate if the user confirms it.
 confirm_eval () {
-    if [[ -z "${WWW_TIFRUEH_HEADLESS}" ]]; then
-        printf '%s\n' "$1"
-        read 'cont?Continue? [y/N] '
-        [[ "${cont}" == 'y' || "${cont}" == 'Y' ]] || return 1
-    fi
+    printf '%s\n' "$1"
+    read 'cont?Continue? [y/N] '
+    [[ "${cont}" == 'y' || "${cont}" == 'Y' ]] || return 1
     eval "$1"
 }
 
@@ -78,14 +71,14 @@ confirm_eval () {
 #   SRC         The source directory.
 #   DST         The destination directory.
 sync () {
-    confirm_eval "${rsync_prefix}rsync --del -vrlpt '${1}' '${2}'"
+    confirm_eval "rsync --del -vrlpt '${1}' '${ruser}@${rhost}:${2}'"
 }
 
-# = MAIN SCRIPT ================================================================
+# === MAIN SCRIPT ==============================================================
 
 # Pull the code repository.
 printt 'BEGIN GIT PULL (CODE)'
-git -C "${WWW_TIFRUEH_HUGO}" pull
+git pull
 printt 'END GIT PULL (CODE)'
 
 # Pull the content repository.
@@ -95,25 +88,33 @@ printt 'END GIT PULL (CONTENT)'
 
 # Generate the info.txt file.
 printf "${info_template}" "$(hugo version)" "$(date -Iseconds)" > "${hugo_info_txt}"
-printf 'Repository CODE:    %s\n' "$(git -C "${hugo}" describe --always --dirty='*')" >> "${hugo_info_txt}"
+printf 'Repository CODE:    %s\n' "$(git describe --always --dirty='*')" >> "${hugo_info_txt}"
 printf 'Repository CONTENT: %s\n' "$(git -C "${hugo_content}" describe --always --dirty='*')" >> "${hugo_info_txt}"
+
+# Remove old builds.
+printt 'BEGIN REMOVE OLD BUILDS'
+confirm_eval "rm -rf ${hugo_public}"
+confirm_eval "rm -rf ${hugo_public_dft}"
+printt 'END REMOVE OLD BUILDS'
 
 # Build site.
 printt 'BEGIN HUGO (PUB)'
-hugo --source "${hugo}" --destination "${hugo_public}"
+hugo --environment "production" --minify --destination "${hugo_public}"
+echo '*' > "${hugo_public}/.gitignore"
 printt 'END HUGO (PUB)'
 
 # Build site with drafts enabled.
 printt 'BEGIN HUGO (DFT)'
-hugo --buildDrafts --source "${hugo}" --destination "${hugo_public_dft}"
+hugo --buildDrafts --environment "production" --minify --destination "${hugo_public_dft}"
+echo '*' > "${hugo_public_dft}/.gitignore"
 printt 'END HUGO (DFT)'
 
 # Sync the site to its webroot.
 printt 'BEGIN RSYNC'
-sync "$hugo_public" "$www"
+sync "$hugo_public" "$rpath"
 printt 'END RSYNC'
 
 # Sync the site with drafts enabled to its webroot.
 printt 'BEGIN RSYNC (DFT)'
-sync "$hugo_public_dft" "$www_dft"
+sync "$hugo_public_dft" "$rpath_dft"
 printt 'END RSYNC (DFT)'
