@@ -223,6 +223,10 @@ blockquote {
     font-style: italic;
 }
 
+blockquote em {
+    font-style: normal;
+}
+
 .top-flex-div {
     box-sizing: border-box;
     padding-top: 30px;
