@@ -224,6 +224,11 @@ blockquote em {
     font-style: normal;
 }
 
+mjx-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 .top-flex-div {
     box-sizing: border-box;
     padding-top: 30px;
