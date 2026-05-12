@@ -1,0 +1,19 @@
+{{- $current := . }}
+{{- $pages := . }}
+{{- with .Parent }}
+{{- if not .IsHome }}
+{{- if .Param "reverse-next-prev" }}
+{{- $pages = .Pages.Reverse }}
+{{- else }}
+{{- $pages = .Pages }}
+{{- end }}
+<nav class="nav-next-prev">
+{{ with $pages.Prev $current }}
+<a href="{{ .RelPermalink }}">&larr; Previous</a>
+{{- end }}
+{{ with $pages.Next $current }}
+<a href="{{ .RelPermalink }}">Next &rarr;</a>
+{{- end }}
+</nav>
+{{- end }}
+{{- end }}
